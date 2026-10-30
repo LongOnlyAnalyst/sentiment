@@ -1,7 +1,7 @@
 {
  "title": "Sentiment",
  "subtitle": "Type a company to get a read",
- "updatedAt": "2026-10-30T11:00:00-05:00",
+ "updatedAt": "2026-10-30T10:47:08-05:00",
  "bigPicture": {
   "lead": "Funding AI is the story across big tech this week.",
   "body": [
@@ -17,7 +17,8 @@
   "SBUX",
   "RKT",
   "SPCX",
-  "NVDA"
+  "NVDA",
+  "INTC"
  ],
  "tickers": [
   {
@@ -911,6 +912,148 @@
      "excerpt": "JUST IN: THE US JUSTICE DEPARTMENT IS REPORTEDLY LOOKING INTO NVIDIA'S $NVDA $12.9 BILLION DEAL TO BUY HUGGING FACE Officials want to know whether owning Hugging Face would let Nvidia control a fundamental distribution ...",
      "engagement": "16,565 views, 76 likes, 8 reposts",
      "url": "https://x.com/WOLF_Financial/status/2115512690462605598"
+    }
+   ]
+  },
+  {
+   "symbol": "INTC",
+   "company": "Intel",
+   "driver": {
+    "type": "Earnings",
+    "title": "Third quarter beat, but a fourth quarter guide far below the Street on a sharp PC slowdown",
+    "date": "2026-10-29"
+   },
+   "move": "Down about 25% to 29% intraday on October 30 (around $66), after closing near $92 on October 29; on track for its worst day on record",
+   "moveTone": "down",
+   "sentiment": "bearish",
+   "sentimentLabel": "Bearish",
+   "verdict": "Bearish: the PC reset and a cash-burning 2027 overwhelm a strong server quarter, and the Street is cutting targets across the board.",
+   "topTheme": "PC collapse swamps the server CPU boom",
+   "updatedAt": "2026-10-30T10:47:08-05:00",
+   "addedAt": "2026-10-30T10:47:08-05:00",
+   "changed": "New read. First time Intel is tracked.",
+   "overview": {
+    "lean": "Bearish near term. Even the bulls concede the guide was a reset; the debate is whether the long-term foundry and server thesis survives it.",
+    "camps": [
+     {
+      "name": "Reset bears (most of the sell side)",
+      "argues": "The PC business hit a wall, Intel did not see it coming, its factories are still sized for PCs rather than servers, and 2027 is a heavy capex year with free cash flow probably not positive. BofA downgraded to neutral; Bernstein, UBS, Wells Fargo and Barclays cut targets to $75 to $80."
+     },
+     {
+      "name": "Long-term bulls",
+      "argues": "Server CPU demand is extraordinary (Intel sees server CPU TAM growing up to 5x over five years, units up 30%+ in 2026 and 2027), data center grew 78%, and the foundry story did not change. Patrick Moorhead said the reaction does not make sense."
+     }
+    ],
+    "agree": "Agree the third quarter itself was good and that server demand is real but supply constrained (substrates, the Israel fab outage). Agree the PC slump runs at least through the first half of 2027 with no memory price relief.",
+    "split": "Split on whether a demand boom Intel cannot fully supply is a temporary bottleneck or proof it is losing the CPU cycle to AMD and TSMC.",
+    "shift": [
+     {
+      "date": "2026-10-26",
+      "note": "Intel announces the Classiq quantum software deal; read as a sign of balance sheet confidence. Stock near its best year on record."
+     },
+     {
+      "date": "2026-10-29",
+      "note": "Before the report the stock slips about 3.6%. After the bell, the Q4 guide of $15B to $16B against about $17B expected sends shares down more than 20% after hours."
+     },
+     {
+      "date": "2026-10-30",
+      "note": "Wave of target cuts and a BofA downgrade. Shares fall as much as 29%, and Intel's 5-year credit default swap widens to a record."
+     }
+    ],
+    "hinges": "Whether server supply (substrates, the Israel fab, shifting Oregon capacity to Intel 3) ramps through 2027 fast enough to offset PCs, and whether Intel names the external packaging and foundry customers it teased for the next two quarters."
+   },
+   "whatHappened": "On October 29 after the close, Intel reported third quarter revenue of $16.5B, up 21%, and adjusted EPS of $0.52 against $0.40 expected. Data center and AI revenue rose 78% to $7.3B, while client computing fell 5% to $8.1B. The fourth quarter guide was $15B to $16B in revenue and $0.25 adjusted EPS, against roughly $17B and $0.43 expected (LSEG). Management said the PC correction accelerated over the last two months, expects client revenue down more than 20% sequentially, sees the PC slowdown lasting at least through the first half of 2027, and said Intel does not expect positive cash flow this year. The October explosion at its Israel fab is expected to cost roughly $600M of revenue over two quarters (Reuters). On October 30 the stock fell as much as 29%, its sharpest one-day drop on record.",
+   "howReading": "The sell side read it as a reset, not a blip. BofA's Vivek Arya downgraded to neutral and cut his target to $100 from $145, citing too little external foundry traction and a sharp PC drop. Bernstein's Stacy Rasgon cut to $75 from $110 and said Intel again did not see it coming and still has too much PC capacity and not enough server capacity. UBS, Wells Fargo, Barclays and Goldman framed it as a PC hole that swallows the server upside. Industry analyst Patrick Moorhead is the main credible pushback: he called the quarter good, said the selloff does not make sense for a multiyear foundry thesis, and pointed to AMD's report next week as the test of whether the supply pain is Intel specific. The biggest reach on X was headline traffic (Walter Bloomberg, StockMKTNewz, Investing.com) on the record drop and record-wide credit spreads.",
+   "facts": [
+    {
+     "label": "Q3 revenue",
+     "value": "$16.5B, up 21% year over year (October 29, Intel release)"
+    },
+    {
+     "label": "Q3 adjusted EPS",
+     "value": "$0.52 vs $0.40 expected (October 29, CNBC citing LSEG)"
+    },
+    {
+     "label": "Segments",
+     "value": "Data center and AI $7.3B, up 78%; client $8.1B, down 5% (October 29)"
+    },
+    {
+     "label": "Q4 guide",
+     "value": "Revenue $15B to $16B vs about $17.07B expected; adjusted EPS $0.25 vs $0.43 (October 29, Reuters and CNBC)"
+    },
+    {
+     "label": "Israel fab",
+     "value": "About $600M of revenue lost over two quarters (October 29, Reuters)"
+    },
+    {
+     "label": "Target changes",
+     "value": "October 30: BofA to neutral, $100 from $145; Bernstein $75 from $110; UBS $80 from $100; Wells Fargo $80 from $120; Barclays $75 from $100; Goldman neutral, $100 (CNBC)"
+    },
+    {
+     "label": "Credit",
+     "value": "5-year CDS at a record 123.5 bps on October 30 (Markit data via Walter Bloomberg, unverified beyond that post)"
+    },
+    {
+     "label": "Stock move",
+     "value": "Down as much as 29% on October 30, on track for the sharpest one-day drop on record (Reuters); about $66 midday"
+    }
+   ],
+   "controversy": "Whether this is a supply problem or a demand problem. Bulls say demand is strong and Intel simply cannot ship enough server chips; bears say the PC wall plus capacity in the wrong places shows the turnaround is slipping. A side debate on X questions CEO Lip-Bu Tan's venture investments in companies Intel deals with (low reach, unverified).",
+   "posts": [
+    {
+     "author": "@DeItaone (Walter Bloomberg)",
+     "gist": "Intel set for its sharpest one-day percentage drop on record",
+     "date": "2026-10-30T08:37:34-05:00",
+     "views": 117710,
+     "likes": 512,
+     "reposts": 75,
+     "excerpt": "$INTC - INTEL SHARES PLUNGE 29%, SET FOR SHARPEST ONE-DAY PERCENTAGE DROP ON RECORD",
+     "engagement": "117,710 views, 512 likes, 75 reposts",
+     "url": "https://x.com/DeItaone/status/2116162598202646584"
+    },
+    {
+     "author": "@PatrickMoorhead (Patrick Moorhead, Moor Insights)",
+     "gist": "Ten call details: server CPU TAM up to 5x, PC units down 12% and 10%, Israel hit, 2027 capex up and FCF likely not positive",
+     "date": "2026-10-29T17:48:02-05:00",
+     "views": 96905,
+     "likes": 464,
+     "reposts": 51,
+     "excerpt": "Five-year view: Intel sees server CPU TAM up to 5x, $40B to $200B+... 2027 investment year: capex up strongly, FCF probably not positive.",
+     "engagement": "96,905 views, 464 likes, 51 reposts",
+     "url": "https://x.com/PatrickMoorhead/status/2115938740845556149"
+    },
+    {
+     "author": "@DeItaone (Walter Bloomberg)",
+     "gist": "Intel's 5-year credit default swap widens to a record",
+     "date": "2026-10-30T09:19:41-05:00",
+     "views": 81243,
+     "likes": 173,
+     "reposts": 28,
+     "excerpt": "INTEL 5-YEAR CREDIT DEFAULT SWAP WIDENS TO RECORD HIGH OF 123.5 BPS, ON TRACK FOR BIGGEST ONE-DAY MOVE SINCE OCTOBER 2022 - MARKIT DATA",
+     "engagement": "81,243 views, 173 likes, 28 reposts",
+     "url": "https://x.com/DeItaone/status/2116173199377408042"
+    },
+    {
+     "author": "@wallstengine (Wall St Engine)",
+     "gist": "CEO and CFO quotes on the accelerating PC correction",
+     "date": "2026-10-29T16:38:45-05:00",
+     "views": 36902,
+     "likes": 124,
+     "reposts": 9,
+     "excerpt": "CEO Lip-Bu Tan: “The pace of the PC correction has accelerated over the last two months.” CFO Dave Zinsner: “For 2027, we're planning for the PC unit TAM to decline roughly 10%.”",
+     "engagement": "36,902 views, 124 likes, 9 reposts",
+     "url": "https://x.com/wallstengine/status/2115921303459057769"
+    },
+    {
+     "author": "@benitoz (Ben Pouladian)",
+     "gist": "Rasgon cuts to $75; the PC hole swallows the server upside",
+     "date": "2026-10-30T00:07:14-05:00",
+     "views": 10083,
+     "likes": 47,
+     "reposts": 0,
+     "excerpt": "Client is headed toward $6.3B versus $8.4B Street. The PC hole swallows the server upside... you can be right about the CPU boom and still wrong about which stock captures it.",
+     "engagement": "10,083 views, 47 likes, 0 reposts",
+     "url": "https://x.com/benitoz/status/2116034167788224935"
     }
    ]
   }
