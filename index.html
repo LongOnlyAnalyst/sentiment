@@ -1,0 +1,104 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sentiment</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="icon" href="favicon.ico" sizes="any"><meta name="theme-color" content="#121416">
+<style>
+:root{--bg:#121416;--pn:#171a1d;--tx:#e6e8e6;--sub:#b3b8b5;--mut:#7c837f;--line:#262b2f;--acc:#7fa9a3;--bull:#86ad8a;--mix:#c4b083;--bear:#c47f70}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.6 "Iowan Old Style","Charter","Bitstream Charter",Georgia,serif;-webkit-font-smoothing:antialiased}
+.s,h2,h3,.k,table,.chip,.fr,.meta,nav,.upd,.eng,.ch{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif}
+main{max-width:980px;margin:0 auto;padding:64px 32px 96px}
+a{color:inherit}
+header{border-bottom:1px solid var(--line);padding-bottom:22px}
+h1{margin:0;font-weight:400;font-size:2.6rem;letter-spacing:-.01em;line-height:1.1}
+.subt{color:var(--sub);margin:10px 0 0;max-width:640px;font-size:1.02rem}
+.upd{color:var(--mut);font-size:.78rem;letter-spacing:.02em;margin-top:12px}
+.upd b{color:var(--acc);font-weight:500}
+h2{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin:56px 0 16px}
+table{width:100%;border-collapse:collapse;font-size:.86rem}
+th{text-align:left;font-weight:500;color:var(--mut);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:0 12px 10px 0;border-bottom:1px solid var(--line);cursor:pointer;user-select:none;white-space:nowrap}
+th:hover{color:var(--sub)}th .ar{opacity:.6;margin-left:4px}
+td{padding:14px 12px 14px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--sub)}
+tr.r{cursor:pointer}tr.r:hover td{color:var(--tx)}
+td.sym{color:var(--tx);font-weight:600;letter-spacing:.04em}
+.down{color:var(--bear)}.up{color:var(--bull)}.unv{color:var(--mut);font-style:italic}
+.chip{display:inline-block;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px 1px;border:1px solid currentColor;border-radius:2px;white-space:nowrap}
+.bullish{color:var(--bull)}.mixed{color:var(--mix)}.bearish{color:var(--bear)}
+.fr{display:flex;gap:18px;flex-wrap:wrap;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;margin:0 0 6px}
+.fr button{background:none;border:0;padding:0 0 3px;color:var(--mut);cursor:pointer;font:inherit;letter-spacing:inherit;border-bottom:1px solid transparent}
+.fr button.on{color:var(--tx);border-bottom-color:var(--acc)}.fr button:hover{color:var(--sub)}
+.big{border-left:2px solid var(--acc);padding:4px 0 4px 24px}
+.big .lead{font-size:1.6rem;line-height:1.25;margin:0 0 12px}
+.big p{margin:0 0 12px;color:var(--sub)}
+.t{padding:40px 0 8px;border-top:1px solid var(--line);margin-top:40px;scroll-margin-top:16px}
+.th{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.th h3{margin:0;font-size:1.9rem;font-weight:400;font-family:inherit;letter-spacing:-.01em}
+.th h3 span{color:var(--mut);font-size:1.1rem;margin-left:10px}
+.meta{color:var(--mut);font-size:.76rem;letter-spacing:.02em;margin-top:8px}
+.ch{font-size:.8rem;color:var(--sub);margin-top:10px}.ch b{color:var(--acc);font-weight:500}
+dl{display:grid;grid-template-columns:150px 1fr;gap:10px 24px;margin:26px 0;font-size:.95rem}
+dt{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);padding-top:4px}
+dd{margin:0;color:var(--sub)}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.k{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin:0 0 6px}
+.ba p,.cv p{margin:0;color:var(--sub);font-size:1rem}
+.cv{margin-top:26px;padding:16px 20px;background:var(--pn);border-left:2px solid var(--mix)}
+.cv .k{color:var(--mix)}
+ol{list-style:none;margin:26px 0 0;padding:0;counter-reset:p}
+ol li{counter-increment:p;display:grid;grid-template-columns:28px 1fr;gap:0 10px;padding:14px 0;border-top:1px solid var(--line)}
+ol li:before{content:counter(p);font-family:-apple-system,Arial,sans-serif;font-size:.74rem;color:var(--mut);padding-top:4px}
+ol a{text-decoration:none;font-size:1.05rem;line-height:1.4}ol a:hover{color:var(--acc)}
+.eng{font-size:.74rem;color:var(--mut);margin-top:4px}.eng .au{color:var(--sub)}
+.wl{display:flex;gap:10px;flex-wrap:wrap}
+.wl a{text-decoration:none;font-family:-apple-system,Arial,sans-serif;font-size:.78rem;letter-spacing:.06em;border:1px solid var(--line);padding:6px 12px;border-radius:2px;color:var(--sub)}
+.wl a:hover{border-color:var(--acc);color:var(--tx)}
+.mth{color:var(--sub);font-size:1rem}
+.src{list-style:none;padding:0;margin:16px 0 0;font-size:.95rem}.src li{padding:6px 0}
+.src a{text-decoration:none;border-bottom:1px solid var(--line)}.src a:hover{color:var(--acc);border-color:var(--acc)}
+.src span{color:var(--mut);font-family:-apple-system,Arial,sans-serif;font-size:.72rem;margin-left:8px}
+footer{margin-top:64px;color:var(--mut);font-family:-apple-system,Arial,sans-serif;font-size:.72rem}
+@media(max-width:700px){main{padding:36px 18px 72px}h1{font-size:2.1rem}.ba{grid-template-columns:1fr;gap:20px}dl{grid-template-columns:1fr;gap:2px 0}dd{margin-bottom:12px}
+.th h3{font-size:1.5rem}.big .lead{font-size:1.3rem}.big{padding-left:16px}
+table thead{display:none}table,tbody,tr,td{display:block}tr.r{display:grid;grid-template-columns:auto 1fr auto;gap:4px 12px;padding:14px 0;border-bottom:1px solid var(--line)}
+td{border:0;padding:0}td.dt{grid-column:2;color:var(--mut);font-size:.78rem}td.mv{grid-column:3;grid-row:1;text-align:right}td.se{grid-column:3;grid-row:2;text-align:right}td.th2{grid-column:1/4;font-size:.84rem}td.sym{grid-row:1/3;font-size:1rem}}
+</style></head><body><main>
+<header><h1>Sentiment</h1><p class="subt" id="sub"></p><div class="upd" id="upd"></div></header>
+<h2>Summary</h2><div class="fr" id="fr"></div>
+<table id="tb"><thead><tr><th data-k="symbol">Ticker</th><th data-k="earningsDate">Earnings</th><th data-k="move">Move</th><th data-k="sentiment">Sentiment</th><th data-k="topTheme">Top theme</th></tr></thead><tbody></tbody></table>
+<h2>The big picture</h2><div class="big" id="big"></div>
+<div id="tk"></div>
+<h2>Watchlist</h2><div class="wl" id="wl"></div>
+<h2>Method and caveats</h2><p class="mth" id="mth"></p><ul class="src" id="src"></ul>
+<footer>Read only. Data lives in data.json and is updated by the Sentiment bot.</footer>
+</main><script>
+const M=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const esc=s=>String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fd=s=>{const[y,m,d]=s.split("-").map(Number);return M[m-1]+" "+d};
+const ft=iso=>{const d=new Date(iso);return new Intl.DateTimeFormat("en-US",{timeZone:"America/Chicago",month:"short",day:"numeric",year:"numeric",hour:"numeric",minute:"2-digit"}).format(d)+" CT"};
+const ago=iso=>{const m=Math.round((Date.now()-new Date(iso))/6e4);if(m<60)return m+" min ago";const h=Math.round(m/60);if(h<48)return h+" hr ago";return Math.round(h/24)+" days ago"};
+const RANK={bullish:0,mixed:1,bearish:2};let D,sk="earningsDate",dir=-1,flt="all";
+function rows(){const b=document.querySelector("#tb tbody");let L=D.tickers.filter(t=>flt=="all"||t.sentiment==flt);
+L.sort((a,c)=>{let x=a[sk],y=c[sk];if(sk=="sentiment"){x=RANK[x];y=RANK[y]}return(x>y?1:x<y?-1:0)*dir});
+b.innerHTML=L.map(t=>'<tr class="r" data-s="'+esc(t.symbol)+'"><td class="sym">'+esc(t.symbol)+'</td><td class="dt">'+fd(t.earningsDate)+'</td><td class="mv '+({down:"down",up:"up",unverified:"unv"}[t.moveTone]||"")+'">'+esc(t.move)+'</td><td class="se"><span class="chip '+esc(t.sentiment)+'">'+esc(t.sentimentLabel||t.sentiment)+'</span></td><td class="th2">'+esc(t.topTheme)+'</td></tr>').join("");
+b.querySelectorAll("tr").forEach(r=>r.onclick=()=>document.getElementById("t-"+r.dataset.s).scrollIntoView());
+document.querySelectorAll("th").forEach(h=>{h.innerHTML=h.textContent.replace(/[↑↓]/g,"")+(h.dataset.k==sk?'<span class="ar">'+(dir>0?"↑":"↓")+'</span>':"")});
+document.querySelectorAll(".t").forEach(s=>s.hidden=!(flt=="all"||s.dataset.se==flt))}
+function card(t){return '<section class="t" id="t-'+esc(t.symbol)+'" data-se="'+esc(t.sentiment)+'"><div class="th"><h3>'+esc(t.symbol)+'<span>'+esc(t.company)+'</span></h3><span class="chip '+esc(t.sentiment)+'">'+esc(t.sentimentLabel||t.sentiment)+'</span></div>'+
+'<div class="meta">Data as of '+ft(t.updatedAt)+' &middot; '+ago(t.updatedAt)+'</div>'+
+'<div class="ch"><b>Since last update:</b> '+(t.changed?esc(t.changed):'First snapshot, nothing to compare yet.')+'</div>'+
+'<dl>'+t.facts.map(f=>'<dt>'+esc(f.label)+'</dt><dd>'+esc(f.value)+'</dd>').join("")+'</dl>'+
+'<div class="ba"><div><p class="k">Before the print</p><p>'+esc(t.before)+'</p></div><div><p class="k">After the print</p><p>'+esc(t.after)+'</p></div></div>'+
+(t.controversy?'<div class="cv"><p class="k">Controversy getting attention</p><p>'+esc(t.controversy)+'</p></div>':'')+
+'<p class="k" style="margin-top:30px">Top posts by reach</p><ol style="margin-top:8px">'+t.posts.map(p=>'<li><div><a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.gist)+'</a><div class="eng"><span class="au">'+esc(p.author)+'</span> &middot; '+esc(p.engagement)+'</div></div></li>').join("")+'</ol></section>'}
+fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{D=d;
+document.getElementById("sub").textContent=d.subtitle;
+document.getElementById("upd").innerHTML='Last updated <b>'+ft(d.updatedAt)+'</b> &middot; '+ago(d.updatedAt);
+document.getElementById("big").innerHTML='<p class="lead">'+esc(d.bigPicture.lead)+'</p>'+d.bigPicture.body.map(p=>'<p>'+esc(p)+'</p>').join("");
+document.getElementById("tk").innerHTML='<h2>By ticker</h2>'+d.tickers.map(card).join("");
+const have=new Set(d.tickers.map(t=>t.symbol));
+document.getElementById("wl").innerHTML=d.watchlist.map(s=>have.has(s)?'<a href="#t-'+esc(s)+'">'+esc(s)+'</a>':'<a href="https://x.com/search?q=%24'+esc(s)+'&f=live" target="_blank" rel="noopener" title="No read yet">'+esc(s)+' &middot; pending</a>').join("");
+document.getElementById("mth").textContent=d.method;
+document.getElementById("src").innerHTML=d.sources.map(s=>'<li><a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.title)+'</a><span>'+esc(s.site)+'</span></li>').join("");
+const F=["all","bullish","mixed","bearish"];const fr=document.getElementById("fr");
+fr.innerHTML=F.map(f=>'<button data-f="'+f+'"'+(f=="all"?' class="on"':'')+'>'+(f=="all"?"All":f[0].toUpperCase()+f.slice(1))+'</button>').join("");
+fr.querySelectorAll("button").forEach(b=>b.onclick=()=>{flt=b.dataset.f;fr.querySelectorAll("button").forEach(x=>x.classList.toggle("on",x==b));rows()});
+document.querySelectorAll("th").forEach(h=>h.onclick=()=>{if(sk==h.dataset.k)dir=-dir;else{sk=h.dataset.k;dir=1}rows()});rows()});
+</script></body></html>
