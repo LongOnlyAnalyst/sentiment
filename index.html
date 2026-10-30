@@ -1,141 +1,93 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sentiment</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="icon" href="favicon.ico" sizes="any"><meta name="theme-color" content="#121416">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sentiment</title>
 <style>
-:root{--bg:#121416;--pn:#171a1d;--tx:#e6e8e6;--sub:#b3b8b5;--mut:#7c837f;--line:#262b2f;--acc:#7fa9a3;--bull:#86ad8a;--mix:#c4b083;--bear:#c47f70}
-*{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.6 "Iowan Old Style","Charter","Bitstream Charter",Georgia,serif;-webkit-font-smoothing:antialiased}
-.s,h2,h3,.k,table,.chip,.fr,.meta,nav,.upd,.eng,.ch{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif}
-main{max-width:980px;margin:0 auto;padding:64px 32px 96px}
-a{color:inherit}
-header{border-bottom:1px solid var(--line);padding-bottom:22px}
-h1{margin:0;font-weight:400;font-size:2.6rem;letter-spacing:-.01em;line-height:1.1}
-.subt{color:var(--sub);margin:10px 0 0;max-width:640px;font-size:1.02rem}
-.upd{color:var(--mut);font-size:.78rem;letter-spacing:.02em;margin-top:12px}
-.upd b{color:var(--acc);font-weight:500}
-h2{font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin:56px 0 16px}
-table{width:100%;border-collapse:collapse;font-size:.86rem}
-th{text-align:left;font-weight:500;color:var(--mut);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:0 12px 10px 0;border-bottom:1px solid var(--line);cursor:pointer;user-select:none;white-space:nowrap}
-th:hover{color:var(--sub)}th .ar{opacity:.6;margin-left:4px}
-td{padding:14px 12px 14px 0;border-bottom:1px solid var(--line);vertical-align:top;color:var(--sub)}
-tr.r{cursor:pointer}tr.r:hover td{color:var(--tx)}
-td.sym{color:var(--tx);font-weight:600;letter-spacing:.04em}
-.down{color:var(--bear)}.up{color:var(--bull)}.unv{color:var(--mut);font-style:italic}
-.chip{display:inline-block;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px 1px;border:1px solid currentColor;border-radius:2px;white-space:nowrap}
-.bullish{color:var(--bull)}.mixed{color:var(--mix)}.bearish{color:var(--bear)}
-.fr{display:flex;gap:18px;flex-wrap:wrap;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;margin:0 0 6px}
-.fr button{background:none;border:0;padding:0 0 3px;color:var(--mut);cursor:pointer;font:inherit;letter-spacing:inherit;border-bottom:1px solid transparent}
-.fr button.on{color:var(--tx);border-bottom-color:var(--acc)}.fr button:hover{color:var(--sub)}
-.big{border-left:2px solid var(--acc);padding:4px 0 4px 24px}
-.big .lead{font-size:1.6rem;line-height:1.25;margin:0 0 12px}
-.big p{margin:0 0 12px;color:var(--sub)}
-.t{padding:40px 0 8px;border-top:1px solid var(--line);margin-top:40px;scroll-margin-top:16px}
-.th{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
-.th h3{margin:0;font-size:1.9rem;font-weight:400;font-family:inherit;letter-spacing:-.01em}
-.th h3 span{color:var(--mut);font-size:1.1rem;margin-left:10px}
-.meta{color:var(--mut);font-size:.76rem;letter-spacing:.02em;margin-top:8px}
-.ch{font-size:.8rem;color:var(--sub);margin-top:10px}.ch b{color:var(--acc);font-weight:500}
-dl{display:grid;grid-template-columns:150px 1fr;gap:10px 24px;margin:26px 0;font-size:.95rem}
-dt{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);padding-top:4px}
-dd{margin:0;color:var(--sub)}
-.ba{display:grid;grid-template-columns:1fr 1fr;gap:32px}
-.k{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin:0 0 6px}
-.ba p,.cv p{margin:0;color:var(--sub);font-size:1rem}
-.cv{margin-top:26px;padding:16px 20px;background:var(--pn);border-left:2px solid var(--mix)}
-.cv .k{color:var(--mix)}
-ol{list-style:none;margin:26px 0 0;padding:0;counter-reset:p}
-ol li{counter-increment:p;display:grid;grid-template-columns:28px 1fr;gap:0 10px;padding:14px 0;border-top:1px solid var(--line)}
-ol li:before{content:counter(p);font-family:-apple-system,Arial,sans-serif;font-size:.74rem;color:var(--mut);padding-top:4px}
-ol a{text-decoration:none;font-size:1.05rem;line-height:1.4}ol a:hover{color:var(--acc)}
-.eng{font-size:.74rem;color:var(--mut);margin-top:4px}.eng .au{color:var(--sub)}
-.wl{display:flex;gap:10px;flex-wrap:wrap}
-.wl a{text-decoration:none;font-family:-apple-system,Arial,sans-serif;font-size:.78rem;letter-spacing:.06em;border:1px solid var(--line);padding:6px 12px;border-radius:2px;color:var(--sub)}
-.wl a:hover{border-color:var(--acc);color:var(--tx)}
-.mth{color:var(--sub);font-size:1rem}
-.src{list-style:none;padding:0;margin:16px 0 0;font-size:.95rem}.src li{padding:6px 0}
-.src a{text-decoration:none;border-bottom:1px solid var(--line)}.src a:hover{color:var(--acc);border-color:var(--acc)}
-.src span{color:var(--mut);font-family:-apple-system,Arial,sans-serif;font-size:.72rem;margin-left:8px}
-footer{margin-top:64px;color:var(--mut);font-family:-apple-system,Arial,sans-serif;font-size:.72rem}
-.srch{position:relative;margin:28px 0 0}
-.srch input{width:100%;background:var(--pn);border:1px solid var(--line);color:var(--tx);font:1.05rem -apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI",Arial,sans-serif;padding:14px 16px;border-radius:2px;outline:0}
-.srch input:focus{border-color:var(--acc)}
-.sug{position:absolute;left:0;right:0;top:100%;background:var(--pn);border:1px solid var(--line);border-top:0;z-index:5;font-family:-apple-system,Arial,sans-serif;font-size:.88rem;max-height:300px;overflow:auto}
-.sug div{padding:10px 16px;cursor:pointer;color:var(--sub)}.sug div b{color:var(--tx);margin-right:10px;letter-spacing:.04em}.sug div.a,.sug div:hover{background:#1d2125;color:var(--tx)}
-.nt{margin-top:14px;padding:18px 20px;background:var(--pn);border-left:2px solid var(--acc);font-family:-apple-system,Arial,sans-serif}
-.nt p{margin:0 0 12px;color:var(--sub);font-size:.92rem}.nt p b{color:var(--tx)}
-.btn{display:inline-block;text-decoration:none;font-family:-apple-system,Arial,sans-serif;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--acc);color:var(--acc);padding:8px 14px;border-radius:2px}.btn:hover{background:var(--acc);color:var(--bg)}
-.rq{margin-top:14px;font-family:-apple-system,Arial,sans-serif;font-size:.76rem;color:var(--mut);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-.rq a{text-decoration:none;border:1px solid var(--line);padding:3px 9px;border-radius:2px;color:var(--sub)}.rq a:hover{border-color:var(--acc)}
-.tbw{max-height:none}.cnt{color:var(--mut);font-size:.74rem;font-family:-apple-system,Arial,sans-serif;margin-left:auto;text-transform:none;letter-spacing:.02em}
-.t.hl{animation:hl 1.6s}@keyframes hl{0%{background:#1d2a28}100%{background:transparent}}
-@media(max-width:700px){main{padding:36px 18px 72px}h1{font-size:2.1rem}.ba{grid-template-columns:1fr;gap:20px}dl{grid-template-columns:1fr;gap:2px 0}dd{margin-bottom:12px}
-.th h3{font-size:1.5rem}.big .lead{font-size:1.3rem}.big{padding-left:16px}
-table thead{display:none}table,tbody,tr,td{display:block}tr.r{display:grid;grid-template-columns:auto 1fr auto;gap:4px 12px;padding:14px 0;border-bottom:1px solid var(--line)}
-td{border:0;padding:0}td.dt{grid-column:2;color:var(--mut);font-size:.78rem}td.mv{grid-column:3;grid-row:1;text-align:right}td.se{grid-column:3;grid-row:2;text-align:right}td.th2{grid-column:1/4;font-size:.84rem}td.sym{grid-row:1/3;font-size:1rem}td.nw{grid-column:1/4}td.nw:empty{display:none}}
-</style></head><body><main>
-<header><h1>Sentiment</h1><p class="subt" id="sub"></p><div class="upd" id="upd"></div>
-<div class="srch"><input id="q" type="search" placeholder="Search any ticker or company, then press Enter" autocomplete="off" aria-label="Search ticker or company"><div class="sug" id="sug" hidden></div></div>
-<div id="nt"></div><div class="rq" id="rq" hidden></div></header>
-<h2>Summary</h2><div class="fr" id="fr"></div>
-<table id="tb"><thead><tr><th data-k="addedAt">New</th><th data-k="symbol">Ticker</th><th data-k="earningsDate">Earnings</th><th data-k="move">Move</th><th data-k="sentiment">Sentiment</th><th data-k="topTheme">Top theme</th></tr></thead><tbody></tbody></table>
-<h2>The big picture</h2><div class="big" id="big"></div>
-<div id="tk"></div>
-<h2>Watchlist</h2><div class="wl" id="wl"></div>
-<h2>Method and caveats</h2><p class="mth" id="mth"></p><ul class="src" id="src"></ul>
-<footer>Read only. Data lives in data.json and is updated by the Sentiment bot.</footer>
-</main><script>
-const M=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-const esc=s=>String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const fd=s=>{const[y,m,d]=s.split("-").map(Number);return M[m-1]+" "+d};
-const ft=iso=>{const d=new Date(iso);return new Intl.DateTimeFormat("en-US",{timeZone:"America/Chicago",month:"short",day:"numeric",year:"numeric",hour:"numeric",minute:"2-digit"}).format(d)+" CT"};
-const ago=iso=>{const m=Math.round((Date.now()-new Date(iso))/6e4);if(m<60)return m+" min ago";const h=Math.round(m/60);if(h<48)return h+" hr ago";return Math.round(h/24)+" days ago"};
-const RANK={bullish:0,mixed:1,bearish:2};let D,sk="addedAt",dir=-1,flt="all";
-function rows(){const b=document.querySelector("#tb tbody");let L=D.tickers.filter(t=>flt=="all"||t.sentiment==flt);
-L.sort((a,c)=>{let x=a[sk]||"",y=c[sk]||"";if(sk=="addedAt"&&x==y){x=a.updatedAt;y=c.updatedAt}if(sk=="sentiment"){x=RANK[x];y=RANK[y]}return(x>y?1:x<y?-1:0)*dir});
-const nw=t=>t.addedAt&&(Date.now()-new Date(t.addedAt))<7*864e5;b.innerHTML=L.map(t=>'<tr class="r" data-s="'+esc(t.symbol)+'"><td class="nw">'+(nw(t)?'<span class="chip" style="color:var(--acc)">New</span>':'')+'</td><td class="sym">'+esc(t.symbol)+'</td><td class="dt">'+fd(t.earningsDate)+'</td><td class="mv '+({down:"down",up:"up",unverified:"unv"}[t.moveTone]||"")+'">'+esc(t.move)+'</td><td class="se"><span class="chip '+esc(t.sentiment)+'">'+esc(t.sentimentLabel||t.sentiment)+'</span></td><td class="th2">'+esc(t.topTheme)+'</td></tr>').join("");
-b.querySelectorAll("tr").forEach(r=>r.onclick=()=>go(r.dataset.s));document.getElementById("cnt").textContent=L.length+" of "+D.tickers.length;
-document.querySelectorAll("th").forEach(h=>{h.innerHTML=h.textContent.replace(/[↑↓]/g,"")+(h.dataset.k==sk?'<span class="ar">'+(dir>0?"↑":"↓")+'</span>':"")});
-document.querySelectorAll(".t").forEach(s=>s.hidden=!(flt=="all"||s.dataset.se==flt))}
-function card(t){return '<section class="t" id="t-'+esc(t.symbol)+'" data-se="'+esc(t.sentiment)+'"><div class="th"><h3>'+esc(t.symbol)+'<span>'+esc(t.company)+'</span></h3><span class="chip '+esc(t.sentiment)+'">'+esc(t.sentimentLabel||t.sentiment)+'</span></div>'+
-'<div class="meta">Data as of '+ft(t.updatedAt)+' &middot; '+ago(t.updatedAt)+'</div>'+
-'<div class="ch"><b>Since last update:</b> '+(t.changed?esc(t.changed):'First snapshot, nothing to compare yet.')+'</div>'+
-'<dl>'+t.facts.map(f=>'<dt>'+esc(f.label)+'</dt><dd>'+esc(f.value)+'</dd>').join("")+'</dl>'+
-'<div class="ba"><div><p class="k">Before the print</p><p>'+esc(t.before)+'</p></div><div><p class="k">After the print</p><p>'+esc(t.after)+'</p></div></div>'+
-(t.controversy?'<div class="cv"><p class="k">Controversy getting attention</p><p>'+esc(t.controversy)+'</p></div>':'')+
-'<p class="k" style="margin-top:30px">Top posts by reach</p><ol style="margin-top:8px">'+t.posts.map(p=>'<li><div><a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.gist)+'</a><div class="eng"><span class="au">'+esc(p.author)+'</span> &middot; '+esc(p.engagement)+'</div></div></li>').join("")+'</ol></section>'}
-fetch("data.json",{cache:"no-store"}).then(r=>r.json()).then(d=>{D=d;
-document.getElementById("sub").textContent=d.subtitle;d.tickers.sort((a,c)=>(c.addedAt||"")>(a.addedAt||"")?1:-1);
-document.getElementById("upd").innerHTML='Last updated <b>'+ft(d.updatedAt)+'</b> &middot; '+ago(d.updatedAt);
-document.getElementById("big").innerHTML='<p class="lead">'+esc(d.bigPicture.lead)+'</p>'+d.bigPicture.body.map(p=>'<p>'+esc(p)+'</p>').join("");
-document.getElementById("tk").innerHTML='<h2>By ticker</h2>'+d.tickers.map(card).join("");
-const have=new Set(d.tickers.map(t=>t.symbol));
-document.getElementById("wl").innerHTML=d.watchlist.map(s=>have.has(s)?'<a href="#t-'+esc(s)+'">'+esc(s)+'</a>':'<a href="https://x.com/search?q=%24'+esc(s)+'&f=live" target="_blank" rel="noopener" title="No read yet">'+esc(s)+' &middot; pending</a>').join("");
-document.getElementById("mth").textContent=d.method;
-document.getElementById("src").innerHTML=d.sources.map(s=>'<li><a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.title)+'</a><span>'+esc(s.site)+'</span></li>').join("");
-const F=["all","bullish","mixed","bearish"];const fr=document.getElementById("fr");
-fr.innerHTML=F.map(f=>'<button data-f="'+f+'"'+(f=="all"?' class="on"':'')+'>'+(f=="all"?"All":f[0].toUpperCase()+f.slice(1))+'</button>').join("")+'<span class="cnt" id="cnt"></span>';
-fr.querySelectorAll("button").forEach(b=>b.onclick=()=>{flt=b.dataset.f;fr.querySelectorAll("button").forEach(x=>x.classList.toggle("on",x==b));rows()});
-document.querySelectorAll("th").forEach(h=>h.onclick=()=>{if(sk==h.dataset.k)dir=-dir;else{sk=h.dataset.k;dir=1}rows()});rows();
-const FORM_URL="https://formspree.io/f/mvkkbrnl";let pend=null;
-function go(s){flt="all";document.querySelectorAll("#fr button").forEach(x=>x.classList.toggle("on",x.dataset.f=="all"));rows();const e=document.getElementById("t-"+s);if(!e)return;e.scrollIntoView();e.classList.remove("hl");void e.offsetWidth;e.classList.add("hl")}
-function found(d,r){const u=r.toUpperCase();return d.tickers.find(t=>t.symbol.toUpperCase()==u||(t.company||"").toUpperCase()==u||(t.company||"").toUpperCase().includes(u)&&u.length>3)}
-function poll(r,t0){if(pend!==r)return;if(Date.now()-t0>15*60*1000){pend=null;nt.innerHTML='<div class="nt"><p><b>Still working on '+esc(r)+'</b></p><p>This is taking longer than usual. Reload the page later to check.</p></div>';return}
-fetch("data.json?t="+Date.now(),{cache:"no-store"}).then(x=>x.json()).then(d=>{if(pend!==r)return;const h=found(d,r);if(h){pend=null;location.hash="t-"+h.symbol;location.reload();return}setTimeout(()=>poll(r,t0),20000)}).catch(()=>setTimeout(()=>poll(r,t0),20000))}
-function send(r){const b=document.getElementById("rqb");if(b){b.disabled=true;b.textContent="Sending..."}
-fetch(FORM_URL,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify({_subject:"Sentiment request: "+r,message:r,request:r})}).then(x=>x.json().then(j=>{if(!x.ok)throw 0})).then(()=>{pend=r;nt.innerHTML='<div class="nt"><p><b>Request sent, it will appear here in a few minutes</b></p><p>Waiting for '+esc(r)+'. This page checks for it every 20 seconds.</p></div>';setTimeout(()=>poll(r,Date.now()),20000)}).catch(()=>{nt.innerHTML='<div class="nt"><p><b>Request failed</b></p><p>Could not send the request. Try again in a minute.</p></div>'})}
-const q=document.getElementById("q"),sg=document.getElementById("sug"),nt=document.getElementById("nt");
-const pool=()=>{const m=new Map();D.tickers.forEach(t=>m.set(t.symbol,{s:t.symbol,c:t.company,h:1}));D.watchlist.forEach(s=>{if(!m.has(s))m.set(s,{s,c:"Pending read",h:0})});return[...m.values()]};
-let ai=-1,cur=[];
-function match(v){v=v.trim().toUpperCase().replace(/^\$/,"");if(!v)return[];return pool().filter(o=>o.s.startsWith(v)||(o.c||"").toUpperCase().includes(v)).sort((a,b)=>(b.s==v)-(a.s==v)||(b.s.startsWith(v))-(a.s.startsWith(v))).slice(0,8)}
-function showSug(){cur=match(q.value);ai=-1;sg.hidden=!cur.length;sg.innerHTML=cur.map((o,i)=>'<div data-i="'+i+'"><b>'+esc(o.s)+'</b>'+esc(o.c)+'</div>').join("");sg.querySelectorAll("div").forEach(x=>x.onmousedown=e=>{e.preventDefault();pick(cur[+x.dataset.i].s)})}
-function pick(v){v=v.trim().toUpperCase().replace(/^\$/,"");sg.hidden=true;nt.innerHTML="";if(!v)return;
-const hit=D.tickers.find(t=>t.symbol==v)||D.tickers.find(t=>(t.company||"").toUpperCase()==v)||(match(v)[0]&&match(v)[0].h&&D.tickers.find(t=>t.symbol==match(v)[0].s));
-if(hit){q.value=hit.symbol;go(hit.symbol);return}
-const s=/^[A-Z.\-]{1,6}$/.test(v)?v:v.replace(/[^A-Z0-9 .&\-]/g,"").slice(0,40);
-const raw=q.value.trim().slice(0,60)||s;
-nt.innerHTML='<div class="nt"><p><b>Not tracked yet: '+esc(raw)+'</b></p><p>Press the button. The Sentiment bot researches the latest earnings reaction on X and adds it here.</p><button class="btn" id="rqb" type="button">Request a read on '+esc(raw)+'</button></div>';document.getElementById("rqb").onclick=()=>send(raw)}
-q.oninput=showSug;q.onblur=()=>setTimeout(()=>sg.hidden=true,100);
-q.onkeydown=e=>{const it=sg.querySelectorAll("div");if(e.key=="ArrowDown"||e.key=="ArrowUp"){e.preventDefault();if(!it.length)return;ai=(ai+(e.key=="ArrowDown"?1:-1)+it.length)%it.length;it.forEach((x,i)=>x.classList.toggle("a",i==ai))}else if(e.key=="Enter"){e.preventDefault();pick(ai>=0&&cur[ai]?cur[ai].s:q.value)}else if(e.key=="Escape")sg.hidden=true};
-
-if(location.hash.startsWith("#q=")){q.value=decodeURIComponent(location.hash.slice(3));pick(q.value)}
-});
-</script></body></html>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:#1a1a1a;background:#fff;overflow-wrap:anywhere}
+main{max-width:680px;margin:0 auto;padding:48px 20px 80px}
+h1{font-size:17px;font-weight:600;margin:0 0 28px}
+form{display:flex;gap:8px}
+input{flex:1;min-width:0;font:inherit;font-size:17px;padding:12px;border:1px solid #bbb;border-radius:4px;background:#fff;color:inherit}
+button{font:inherit;font-size:16px;padding:12px 16px;min-height:44px;border:1px solid #1a1a1a;border-radius:4px;background:#fff;color:#1a1a1a;cursor:pointer}
+.hint,.muted{color:#666}
+.hint{margin:12px 0 0}
+a{color:#1a1a1a}
+.accent{color:#9a3412}
+hr{border:0;border-top:1px solid #e3e3e3;margin:28px 0}
+h2{font-size:22px;font-weight:600;margin:0}
+h3{font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#666;margin:0 0 10px}
+p{margin:0 0 12px}
+ul{padding-left:18px;margin:0 0 12px}li{margin:0 0 8px}
+blockquote{margin:0 0 20px;padding:0}
+blockquote p{margin:0 0 4px}
+#recent a{display:inline-block;padding:10px 14px 10px 0;min-height:44px}
+#status{margin:16px 0 0}
+</style>
+</head>
+<body>
+<main>
+<h1>Sentiment</h1>
+<form id="f" autocomplete="off"><input id="q" placeholder="Company or ticker" aria-label="Company or ticker" autocapitalize="characters"><button>Read</button></form>
+<p class="hint" id="hint">Type a company to get a read</p>
+<p id="status" class="muted" hidden></p>
+<div id="recentWrap" hidden><hr><h3>Recent lookups</h3><div id="recent"></div></div>
+<div id="read"></div>
+</main>
+<script>
+const FORM_URL="https://formspree.io/f/mvkkbrnl";
+const M=["January","February","March","April","May","June","July","August","September","October","November","December"];
+let DATA=null,timer=null;
+const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function fd(s){if(!s)return"";const[y,m,d]=s.slice(0,10).split("-").map(Number);return M[m-1]+" "+d+", "+y}
+function fdt(iso){const d=new Date(iso);if(isNaN(d))return"";const p=new Intl.DateTimeFormat("en-US",{timeZone:"America/Chicago",month:"long",day:"numeric",year:"numeric",hour:"numeric",minute:"2-digit"}).formatToParts(d);const g=t=>(p.find(x=>x.type===t)||{}).value;return g("month")+" "+g("day")+", "+g("year")+", "+g("hour")+":"+g("minute")+" "+g("dayPeriod")+" CT"}
+function fshort(iso){const d=new Date(iso);return new Intl.DateTimeFormat("en-US",{timeZone:"America/Chicago",month:"long",day:"numeric"}).format(d)}
+const n=v=>v==null?null:Number(v).toLocaleString("en-US");
+async function load(){const r=await fetch("data.json?t="+Date.now(),{cache:"no-store"});DATA=await r.json();return DATA}
+function find(q){q=q.trim().toLowerCase().replace(/^\$/,"");if(!q||!DATA)return null;return DATA.tickers.find(t=>t.symbol.toLowerCase()===q)||DATA.tickers.find(t=>t.company.toLowerCase()===q)||DATA.tickers.find(t=>t.company.toLowerCase().startsWith(q)&&q.length>=3)}
+function recent(){try{return JSON.parse(localStorage.getItem("recent")||"[]")}catch(e){return[]}}
+function addRecent(s){const r=recent().filter(x=>x!==s);r.unshift(s);localStorage.setItem("recent",JSON.stringify(r.slice(0,12)));drawRecent()}
+function drawRecent(){const r=recent();document.getElementById("recentWrap").hidden=!r.length;document.getElementById("recent").innerHTML=r.map(s=>`<a href="#${esc(s)}" data-s="${esc(s)}">${esc(s)}</a>`).join(" ")}
+function status(t){const e=document.getElementById("status");e.hidden=!t;e.innerHTML=t||""}
+function overview(o){if(!o)return"";if(Array.isArray(o))return`<ul>${o.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`;let h="";
+if(o.lean)h+=`<p><b>Lean:</b> ${esc(o.lean)}</p>`;
+if(o.camps&&o.camps.length)h+=`<ul>${o.camps.map(c=>`<li><b>${esc(c.name)}:</b> ${esc(c.argues)}</li>`).join("")}</ul>`;
+if(o.agree)h+=`<p><b>Where they agree:</b> ${esc(o.agree)}</p>`;
+if(o.split)h+=`<p><b>Where they split:</b> ${esc(o.split)}</p>`;
+if(o.shift&&o.shift.length)h+=`<p><b>How it shifted:</b></p><ul>${o.shift.map(s=>`<li>${esc(fd(s.date))}: ${esc(s.note)}</li>`).join("")}</ul>`;
+if(o.hinges)h+=`<p><b>What it hinges on:</b> ${esc(o.hinges)}</p>`;return h}
+function render(t){const days=(Date.now()-new Date(t.updatedAt))/864e5;
+const stale=days>3?` <span class="accent">Stale, last updated ${esc(fshort(t.updatedAt))}</span>`:"";
+const posts=(t.posts||[]).slice().sort((a,b)=>(b.views||0)-(a.views||0)||(b.likes||0)-(a.likes||0));
+const dr=t.driver||{};
+document.getElementById("read").innerHTML=`<hr>
+<h2>${esc(t.company)} (${esc(t.symbol)})</h2>
+<p class="muted">As of ${esc(fdt(t.updatedAt))}.${stale}</p>
+<p>${esc(t.verdict||t.sentimentLabel)}</p>
+<p class="muted">Move: ${esc(t.move)}</p>
+<hr><h3>Overall picture</h3>${overview(t.overview)}
+<hr><h3>What happened</h3><p><b>${esc(dr.type)}, ${esc(fd(dr.date))}:</b> ${esc(dr.title)}</p><p>${esc(t.whatHappened)}</p>
+${(t.facts||[]).length?`<ul>${t.facts.map(f=>`<li>${esc(f.label)}: ${esc(f.value)}</li>`).join("")}</ul>`:""}
+<hr><h3>How investors are reading it</h3><p>${esc(t.howReading)}</p>${t.controversy?`<p class="muted">Contested: ${esc(t.controversy)}</p>`:""}
+<hr><h3>Top posts</h3>${posts.map(p=>`<blockquote><p>"${esc(p.excerpt||p.gist)}"</p><p class="muted">${esc(p.author)}, ${esc(fdt(p.date))}. ${p.views==null?"views n/a":n(p.views)+" views"}, ${n(p.likes)} likes, ${n(p.reposts)} reposts. <a href="${esc(p.url)}" target="_blank" rel="noopener">Open on X</a></p></blockquote>`).join("")}
+${t.changed?`<p class="muted">Changed since last read: ${esc(t.changed)}</p>`:""}
+<hr><button id="refresh">Refresh this read</button>`;
+document.getElementById("refresh").onclick=()=>request(t.symbol,true)}
+function open(t){stop();status("");render(t);addRecent(t.symbol);location.hash=t.symbol}
+function stop(){if(timer){clearInterval(timer);timer=null}}
+async function request(q,isRefresh){const sym=q.trim().replace(/^\$/,"").toUpperCase();const since=Date.now();
+const subj=(isRefresh?"Sentiment refresh: ":"Sentiment request: ")+sym;
+try{const r=await fetch(FORM_URL,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify({_subject:subj,message:sym,request:sym})});if(!r.ok)throw 0}catch(e){status("Could not send the request. Try again.");return}
+if(!isRefresh)document.getElementById("read").innerHTML="";
+status("Searching, this takes a few minutes");stop();
+timer=setInterval(async()=>{if(Date.now()-since>15*60e3){stop();status("No read yet after 15 minutes. Try again later.");return}
+try{await load();const t=find(sym);if(t&&new Date(t.updatedAt).getTime()>since){stop();addRecent(t.symbol);status(`<a href="#${esc(t.symbol)}" id="ready">Ready, tap to refresh</a>`);document.getElementById("ready").onclick=e=>{e.preventDefault();open(t)}}}catch(e){}},20000)}
+document.getElementById("f").onsubmit=e=>{e.preventDefault();const q=document.getElementById("q").value;if(!q.trim())return;const t=find(q);t?open(t):request(q,false)};
+document.getElementById("recent").onclick=e=>{const s=e.target.dataset&&e.target.dataset.s;if(!s)return;e.preventDefault();const t=find(s);if(t)open(t);else status("No read for "+esc(s)+" yet.")};
+load().then(()=>{drawRecent();const h=decodeURIComponent(location.hash.slice(1));if(h&&recent().includes(h.toUpperCase())){const t=find(h);if(t)render(t)}});
+</script>
+</body>
+</html>

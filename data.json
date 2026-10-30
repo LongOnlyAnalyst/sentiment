@@ -1,534 +1,951 @@
 {
-  "title": "Sentiment",
-  "subtitle": "How professional investors on X reacted to the latest earnings, ranked by reach, with the analysts' views alongside.",
-  "updatedAt": "2026-10-30T10:40:00-05:00",
-  "bigPicture": {
-    "lead": "Cash is the scoreboard now.",
-    "body": [
-      "Across the hyperscalers, the market rewarded whoever funds AI from its own cash and punished cash burn, even with fast cloud growth. Microsoft is the only one still cash positive. Alphabet, Meta and Amazon all reported negative free cash flow and all sold off.",
-      "The professional accounts with the most reach (The Transcript, Fiscal.ai, Beth Kindig, Bespoke, Wall St Engine) all framed the season around free cash flow and capex, not revenue beats. Meta's record CDS spreads show the debate has spread to credit."
-    ]
+ "title": "Sentiment",
+ "subtitle": "Type a company to get a read",
+ "updatedAt": "2026-10-30T11:00:00-05:00",
+ "bigPicture": {
+  "lead": "Funding AI is the story across big tech this week.",
+  "body": [
+   "Each read covers the last 3 to 5 days and starts from whatever moved the stock: earnings, an equity raise, a regulatory step, or a deal debate.",
+   "This week the market rewarded companies that fund AI from their own cash (Microsoft) and punished cash burn or new equity (Alphabet, Amazon, Meta)."
+  ]
+ },
+ "watchlist": [
+  "GOOG",
+  "MSFT",
+  "AMZN",
+  "META",
+  "SBUX",
+  "RKT",
+  "SPCX",
+  "NVDA"
+ ],
+ "tickers": [
+  {
+   "symbol": "GOOG",
+   "company": "Alphabet",
+   "driver": {
+    "type": "Earnings",
+    "title": "Search growth slowed to 12% as AI Mode earns less per query",
+    "date": "2026-10-28"
+   },
+   "move": "-12.6% on Oct 29",
+   "moveTone": "down",
+   "sentiment": "bearish",
+   "sentimentLabel": "Bearish",
+   "verdict": "Bearish: Search revenue growth slowed sharply and the market repriced Search, even with Cloud doubling.",
+   "topTheme": "Search slowing, AI Mode monetizes less",
+   "updatedAt": "2026-10-30T11:00:00-05:00",
+   "addedAt": "2026-10-23T09:00:00-05:00",
+   "changed": "Reframed around the real driver: the Search growth slowdown. Move confirmed at about 12.6% on Oct 29.",
+   "overview": {
+    "lean": "Bearish near term, constructive on 12 months among the Street.",
+    "camps": [
+     {
+      "name": "Search bears",
+      "argues": "AI Mode answers more questions but carries fewer ads, so Search growth falling from 17% to 12% is structural, not a blip."
+     },
+     {
+      "name": "Long-term bulls",
+      "argues": "AI Mode queries are longer and Cloud grew over 100%, so monetization catches up and the selloff overshoots."
+     }
+    ],
+    "agree": "Nearly everyone agrees the problem is Search monetization, not Cloud. Cloud more than doubled.",
+    "split": "Split on whether lower revenue per search is temporary (ads still being added inside AI Mode) or permanent.",
+    "shift": [
+     {
+      "date": "2026-10-28",
+      "note": "After the close, the headline miss and negative free cash flow drew immediate selling."
+     },
+     {
+      "date": "2026-10-29",
+      "note": "Down about 13% intraday, on track for its worst post-earnings day on record. The Search slowdown became the single story."
+     },
+     {
+      "date": "2026-10-30",
+      "note": "Bull rebuttals and dip buying appear, but the high-reach framing is still Search repricing."
+     }
+    ],
+    "hinges": "Whether Google can put enough ads into AI Mode to lift revenue per query back up."
+   },
+   "whatHappened": "Alphabet reported Q3 on Oct 28. Search revenue grew 12% to $63.35B (Oct 28), down from 17% in Q2, while Cloud grew 103% to $30.7B (Oct 28) and free cash flow was negative $9.07B (Oct 28). Management said AI Mode queries carry lower monetization. The stock fell about 12.6% on Oct 29, its worst post-earnings day on record, erasing roughly $500B of value.",
+   "howReading": "Credible voices read it as a repricing of Search economics rather than a rejection of Google's AI position: more questions, less money per question. A minority, including former fund manager Rahul Sharma, point out paid clicks still grew 8% and cost per click 4%, so the slowdown is fewer monetized clicks, not price. The Street mostly cut targets but kept ratings.",
+   "facts": [
+    {
+     "label": "Search revenue",
+     "value": "$63.35B, +12%, vs about $64.9B expected (Oct 28)"
+    },
+    {
+     "label": "Cloud revenue",
+     "value": "$30.7B, +103% (Oct 28)"
+    },
+    {
+     "label": "Free cash flow",
+     "value": "Negative $9.07B in Q3 (Oct 28)"
+    },
+    {
+     "label": "Stock move",
+     "value": "Down about 12.6% on Oct 29, worst post-earnings day on record per CNBC"
+    },
+    {
+     "label": "Street moves",
+     "value": "Citizens downgraded to market perform; BofA cut target to $380, BMO to $425, UBS to $332 (Oct 29)"
+    }
+   ],
+   "controversy": "Advertiser complaints about higher cost per click got replies but little reach; 10-Q data shows cost per click up only 4%.",
+   "posts": [
+    {
+     "author": "@coinbureau",
+     "gist": "Search is being cannibalized by AI: more questions, less revenue",
+     "date": "2026-10-29T00:48:25-05:00",
+     "views": 61661,
+     "likes": 456,
+     "reposts": 60,
+     "excerpt": "Google’s Search business is being CANNIBALIZED by AI. Alphabet shares plunged nearly -10% after hours as Search revenue missed expectations, even as people asked Google more questions. The reason is that more searches ...",
+     "engagement": "61,661 views, 456 likes, 60 reposts",
+     "url": "https://x.com/coinbureau/status/2115682143951372437"
+    },
+    {
+     "author": "@VanquishTrader",
+     "gist": "Selloff is a repricing of the economics of replacing Search, not a rejection of Google's AI",
+     "date": "2026-10-28T18:17:03-05:00",
+     "views": 55897,
+     "likes": 275,
+     "reposts": 22,
+     "excerpt": "THE REAL REASON $GOOGL IS GETTING HAMMERED AFTER EARNINGS Google selloff is less a rejection of its AI position than a repricing of economics of replacing Search. Search revenue grew 12% to $63.35B versus 17% in Q2 ...",
+     "engagement": "55,897 views, 275 likes, 22 reposts",
+     "url": "https://x.com/VanquishTrader/status/2115583656370823462"
+    },
+    {
+     "author": "@wallstengine",
+     "gist": "On track for its worst post-earnings decline on record as Search growth slowed to 12% from 17%",
+     "date": "2026-10-29T08:48:15-05:00",
+     "views": 29256,
+     "likes": 156,
+     "reposts": 6,
+     "excerpt": "Alphabet $GOOGL -13%, on track for its WORST post-earnings decline on record: As fears over the future of Google Search intensify despite Cloud revenue more than doubling. Search revenue growth slowed to 12% in Q3 from ...",
+     "engagement": "29,256 views, 156 likes, 6 reposts",
+     "url": "https://x.com/wallstengine/status/2115802900366848046"
+    },
+    {
+     "author": "@saso_capital (SasoEquity)",
+     "gist": "Bull rebuttal: AI Mode queries are longer, so they should be worth more to advertisers in time",
+     "date": "2026-10-29T12:56:22-05:00",
+     "views": 11298,
+     "likes": 199,
+     "reposts": 21,
+     "excerpt": "$GOOGL AI mode and Agents will ultimately make Google Search more valuable to advertisers, not less. AI Mode searches run about 3x longer than classic searches, and one in five uses voice, images or documents. A longer ...",
+     "engagement": "11,298 views, 199 likes, 21 reposts",
+     "url": "https://x.com/saso_capital/status/2115865338697142340"
+    },
+    {
+     "author": "@Retail_Guru (Rahul Sharma)",
+     "gist": "Paid clicks +8%, cost per click +4%: the miss was fewer monetized clicks, not price",
+     "date": "2026-10-29T08:48:13-05:00",
+     "views": 8313,
+     "likes": 92,
+     "reposts": 5,
+     "excerpt": "$GOOGL paid clicks decelerated to +8% from +13% in H1, with cost per click steady at +4%. While 500bp is substantial, barring the last two quarters, it is still the best growth number on paid clicks since Q2 2023.",
+     "engagement": "8,313 views, 92 likes, 5 reposts",
+     "url": "https://x.com/Retail_Guru/status/2115802892187943092"
+    }
+   ]
   },
-  "watchlist": [
-    "GOOG",
-    "MSFT",
-    "AMZN",
-    "META",
-    "SBUX",
-    "RKT",
-    "SPCX",
-    "NVDA"
-  ],
-  "tickers": [
+  {
+   "symbol": "MSFT",
+   "company": "Microsoft",
+   "driver": {
+    "type": "Earnings",
+    "title": "Azure grew 48% and was guided to 49% to 50%, while staying cash positive",
+    "date": "2026-10-28"
+   },
+   "move": "+4% after hours Oct 28, roughly flat Oct 29",
+   "moveTone": "up",
+   "sentiment": "bullish",
+   "sentimentLabel": "Bullish",
+   "verdict": "Bullish: the cleanest hyperscaler quarter, with Azure accelerating and free cash flow still positive.",
+   "topTheme": "Azure +48%, self-funding AI",
+   "updatedAt": "2026-10-30T11:00:00-05:00",
+   "addedAt": "2026-10-23T09:00:00-05:00",
+   "changed": "Reframed as event-driven. No change in call.",
+   "overview": {
+    "lean": "Bullish.",
+    "camps": [
+     {
+      "name": "Self-funding AI winner",
+      "argues": "Azure accelerated to 48% with a 49% to 50% guide and positive free cash flow, unlike peers."
+     },
+     {
+      "name": "Timing skeptics",
+      "argues": "Lower capex reflects late third-party capacity, not discipline, so spend catches up later."
+     }
+    ],
+    "agree": "Agree Microsoft had the best AI funding story of the week.",
+    "split": "Split on whether the capex trim is real or just delayed.",
+    "shift": [
+     {
+      "date": "2026-10-28",
+      "note": "Up about 4% after hours on the beat and Azure guide."
+     },
+     {
+      "date": "2026-10-29",
+      "note": "Gains faded to roughly flat as the Alphabet selloff hit the group."
+     }
+    ],
+    "hinges": "Whether supply comes online fast enough to keep Azure near 50% without breaking free cash flow."
+   },
+   "whatHappened": "Microsoft reported fiscal Q1 on Oct 28. Revenue was $92.3B vs $90.7B expected (Oct 28) and Azure grew 48% to $33.2B (Oct 28), with next quarter guided to 49% to 50% against about 44.6% expected. Capex of $45.2B came in under estimates and calendar 2026 capex was trimmed to about $170B because third-party capacity arrived late. Free cash flow fell 27% but stayed positive at $18.6B.",
+   "howReading": "High-signal accounts framed Microsoft as the self-funding AI winner against Alphabet, Meta and Amazon, which all burned cash. The CFO's line that demand still exceeds supply got the most pickup. The main reservation is that lower capex is timing rather than discipline.",
+   "facts": [
     {
-      "symbol": "GOOG",
-      "company": "Alphabet",
-      "earningsDate": "2026-10-28",
-      "move": "-12% to -13%",
-      "moveTone": "down",
-      "sentiment": "bearish",
-      "sentimentLabel": "Bearish",
-      "topTheme": "AI Mode earns less per search, FCF -$9.1B",
-      "updatedAt": "2026-10-30T09:50:00-05:00",
-      "changed": "",
-      "facts": [
-        {
-          "label": "Earnings",
-          "value": "Oct 28, after the close"
-        },
-        {
-          "label": "Stock reaction",
-          "value": "Down about 12% to 13% on Oct 29, worst post-earnings day on record per CNBC, roughly $500B of value lost"
-        },
-        {
-          "label": "Sentiment",
-          "value": "Bearish near term, pros still constructive on 12 months"
-        },
-        {
-          "label": "Street moves",
-          "value": "Citizens downgraded to market perform. BofA cut target to $380, BMO to $425, UBS to $332. Morgan Stanley held $375"
-        }
-      ],
-      "before": "Pros wanted Search and YouTube ad growth to hold while Cloud grew about 90% and capex stayed at $195B to $205B. Beth Kindig flagged Alphabet as expected to burn cash for a second straight quarter.",
-      "after": "First top and bottom line miss in nearly four years. Cloud grew 103% to $30.7B, but Search was $63.35B against about $64.9B expected and free cash flow was negative $9.07B. The narrative that stuck: Philipp Schindler said AI Mode queries had an impact because of lower monetization in AI Mode. Pros framed it as more searches but less money per search, plus a cash burn problem, while Microsoft showed you can grow AI and stay cash positive.",
-      "controversy": "The ad gouging story is mostly anecdotal. Advertiser complaints about rising cost per click got replies but little reach. The 10-Q data cited by several analysts shows paid clicks up 8% (down from 13% in the first half) and cost per click up only 4%. So the miss was fewer monetized clicks, not price hikes. Rahul Sharma, a former Citi and Alliance Capital fund manager, made this point. The real controversy for advertisers is that AI Mode answers carry fewer ads, and Google says it will add more ads inside AI Mode, including outside the US.",
-      "posts": [
-        {
-          "author": "@coinbureau",
-          "gist": "Search is being cannibalized by AI: more questions, less revenue",
-          "engagement": "456 likes, 60 reposts, 61.6K views",
-          "url": "https://x.com/coinbureau/status/2115682143951372437"
-        },
-        {
-          "author": "@saso_capital (SasoEquity)",
-          "gist": "Bull rebuttal: AI Mode queries are about 3x longer, so in time they should be worth more to advertisers",
-          "engagement": "187 likes, 21 reposts, 11.0K views",
-          "url": "https://x.com/saso_capital/status/2115865338697142340"
-        },
-        {
-          "author": "@Retail_Guru (Rahul Sharma)",
-          "gist": "Paid clicks slowed to +8% from +13%, cost per click flat at +4%. Still the best click growth since Q2 2023 outside the last two quarters",
-          "engagement": "91 likes, 34 bookmarks, 8.3K views",
-          "url": "https://x.com/Retail_Guru/status/2115802892187943092"
-        },
-        {
-          "author": "@WOLF_Financial",
-          "gist": "Headline numbers: capex $51.4B, about 40% of revenue",
-          "engagement": "72 likes, 66.4K views",
-          "url": "https://x.com/WOLF_Financial/status/2115536167521202204"
-        },
-        {
-          "author": "@FactSet",
-          "gist": "Street takeaways: Ads missed by 1.9%, Cloud beat by 6.9%, operating margin down 210bps",
-          "engagement": "3.2K views",
-          "url": "https://x.com/FactSet/status/2115795271644831796"
-        }
-      ],
-      "addedAt": "2026-10-23T09:00:00-05:00"
+     "label": "Revenue",
+     "value": "$92.3B vs $90.7B expected (Oct 28)"
     },
     {
-      "symbol": "MSFT",
-      "company": "Microsoft",
-      "earningsDate": "2026-10-28",
-      "move": "+4% AH, flat next day",
-      "moveTone": "flat",
-      "sentiment": "bullish",
-      "sentimentLabel": "Bullish",
-      "topTheme": "Azure +48%, guided 49-50%, still cash positive",
-      "updatedAt": "2026-10-30T09:50:00-05:00",
-      "changed": "",
-      "facts": [
-        {
-          "label": "Earnings",
-          "value": "Oct 28, after the close (fiscal Q1 2027)"
-        },
-        {
-          "label": "Stock reaction",
-          "value": "Up about 4% after hours, roughly flat by the Oct 29 close (Business Insider says down 0.2%)"
-        },
-        {
-          "label": "Sentiment",
-          "value": "Bullish, the cleanest quarter of the group"
-        },
-        {
-          "label": "Street moves",
-          "value": "Targets raised: Bernstein $722, Morgan Stanley $650, JPMorgan $625"
-        }
-      ],
-      "before": "Kindig noted Microsoft was the only hyperscaler expected to stay cash positive. Visible Alpha had Azure at about 47.7%.",
-      "after": "Azure grew 48% to $33.2B, and Microsoft gave a dollar figure for it for the first time. It guided 49% to 50% next quarter against about 44.6% expected. Revenue was $92.3B against $90.7B expected. Capex of $45.2B came in under estimates, and calendar 2026 capex was trimmed to about $170B because third-party capacity came late. Free cash flow fell 27% but stayed positive at $18.6B. Pros' read: it is the self-funding AI winner. The one worry is that lower capex reflects timing, not discipline.",
-      "controversy": "",
-      "posts": [
-        {
-          "author": "@Fiscal_ai",
-          "gist": "Cloud growth league table: Google Cloud +103%, Azure +48%, AWS +39%",
-          "engagement": "377 likes, 59 reposts, 27.7K views",
-          "url": "https://x.com/Fiscal_ai/status/2115904014747644203"
-        },
-        {
-          "author": "@wallstengine",
-          "gist": "Guidance: Azure +49% to 50% vs 44.6% est, demand still exceeds supply, capex cut to about $170B on delays",
-          "engagement": "210 likes, 25 reposts, 37.0K views",
-          "url": "https://x.com/wallstengine/status/2115566078462148625"
-        },
-        {
-          "author": "@Fiscal_ai",
-          "gist": "Segment breakdown: Windows OEM down 22%, Xbox down 2%",
-          "engagement": "147 likes, 12.7K views",
-          "url": "https://x.com/Fiscal_ai/status/2115539605789564940"
-        },
-        {
-          "author": "@TheTranscript_",
-          "gist": "CFO: \"Customer demand continues to exceed available supply.\"",
-          "engagement": "29 likes, 7.3K views",
-          "url": "https://x.com/TheTranscript_/status/2115567686986121596"
-        }
-      ],
-      "addedAt": "2026-10-23T09:00:00-05:00"
+     "label": "Azure",
+     "value": "$33.2B, +48%, guide 49% to 50% (Oct 28)"
     },
     {
-      "symbol": "AMZN",
-      "company": "Amazon",
-      "earningsDate": "2026-10-29",
-      "move": "About -7% premarket",
-      "moveTone": "down",
-      "sentiment": "mixed",
-      "sentimentLabel": "Mixed",
-      "topTheme": "AWS fastest in 5 years vs -$42B trailing FCF",
-      "updatedAt": "2026-10-30T09:50:00-05:00",
-      "changed": "",
-      "facts": [
-        {
-          "label": "Earnings",
-          "value": "Oct 29, after the close"
-        },
-        {
-          "label": "Stock reaction",
-          "value": "Closed Oct 29 at $243.79 (down 4.25% before the print), then down about 7% premarket Oct 30 near $226 to $227"
-        },
-        {
-          "label": "Sentiment",
-          "value": "Mixed, leaning bearish on cash"
-        }
-      ],
-      "before": "Morgan Stanley's model, shared by Kindig, has AWS growing about 47% in 2027. Pros expected AWS at about 38% and a third straight quarter of cash burn.",
-      "after": "AWS grew 39.3% to $46.0B, its fastest in nearly five years, and the backlog is $578B. Jassy guided AWS to over 40% growth in both 2027 and 2028. But revenue of $201.9B and EPS of $1.89 missed, the Q4 guide midpoints were below consensus, capex was $77.3B in a single quarter, and trailing free cash flow was negative $42.4B. The operating margin hit a record 13.9%. The pros' split: AWS is accelerating, but the stock is priced on the cash bill.",
-      "controversy": "",
-      "posts": [
-        {
-          "author": "@Beth_Kindig",
-          "gist": "AWS +39.3% to $46B, Jassy projecting 40%+ growth in 2027 and 2028",
-          "engagement": "299 likes, 30.4K views",
-          "url": "https://x.com/Beth_Kindig/status/2115908093662101577"
-        },
-        {
-          "author": "@Beth_Kindig",
-          "gist": "Pre-print: Morgan Stanley sees AWS nearly tripling from 2025 to 2028",
-          "engagement": "291 likes, 35 reposts, 30.0K views",
-          "url": "https://x.com/Beth_Kindig/status/2115511944866037966"
-        },
-        {
-          "author": "@Fiscal_ai",
-          "gist": "Hyperscalers at $439B combined cloud run rate, AWS $184B",
-          "engagement": "225 likes, 40 reposts, 12.5K views",
-          "url": "https://x.com/Fiscal_ai/status/2115903755266973795"
-        },
-        {
-          "author": "@TheTranscript_",
-          "gist": "FCF trend chart for big tech so far",
-          "engagement": "99 likes, 19 reposts, 13.9K views",
-          "url": "https://x.com/TheTranscript_/status/2115906344096309517"
-        }
-      ],
-      "addedAt": "2026-10-23T09:00:00-05:00"
+     "label": "Free cash flow",
+     "value": "$18.6B, down 27% but positive (Oct 28)"
     },
     {
-      "symbol": "META",
-      "company": "Meta Platforms",
-      "earningsDate": "2026-10-21",
-      "move": "-7%",
-      "moveTone": "down",
-      "sentiment": "mixed",
-      "sentimentLabel": "Mixed",
-      "topTheme": "First negative FCF since 2012, record CDS, Class C shares",
-      "updatedAt": "2026-10-30T09:50:00-05:00",
-      "changed": "",
-      "facts": [
-        {
-          "label": "Earnings",
-          "value": "Oct 21, after the close"
-        },
-        {
-          "label": "Stock reaction",
-          "value": "Up about 2.5% to 4% after hours, then down nearly 7% on Oct 22 (about $651)"
-        },
-        {
-          "label": "Sentiment",
-          "value": "Mixed: Street bullish, tape and credit market bearish"
-        },
-        {
-          "label": "Street moves",
-          "value": "6 of 7 firms raised targets per Benzinga. Susquehanna to $850. JPMorgan cut to $800"
-        }
-      ],
-      "before": "Baird's ad checks were positive and it expected an in-line quarter. The question was whether a capex raise would be forgiven now that AI is improving ad returns.",
-      "after": "Revenue was $64.6B, up 26%, ahead of $63.4B expected, and the Q4 guide was strong at $73B to $76B. EPS of $3.83 included a $9.9B legal charge for the social media harm settlements. Capex of $34.9B pushed free cash flow to negative $2.12B, the first negative quarter since 2012. Meta also created a nonvoting Class C stock, which the market read as a way to raise equity without diluting votes, and its 5-year CDS hit a record. The debate moved from the stock to the credit market.",
-      "controversy": "The nonvoting Class C share plus record CDS spreads is the issue professionals focused on: is Meta preparing to fund AI with new equity?",
-      "posts": [
-        {
-          "author": "@TheTranscript_",
-          "gist": "Capex roundup: META $135B to $145B for 2026, 'continue investing aggressively'",
-          "engagement": "55 likes, 10.2K views",
-          "url": "https://x.com/TheTranscript_/status/2115784562026700923"
-        },
-        {
-          "author": "@_Investinq",
-          "gist": "First negative FCF since the 2012 IPO, capex up 80% y/y",
-          "engagement": "28 likes, 3.6K views",
-          "url": "https://x.com/_Investinq/status/2113009799122014445"
-        },
-        {
-          "author": "@DividendTalks",
-          "gist": "Revenue beat, profit miss on legal charge, margins 40% to 20%",
-          "engagement": "3.1K views",
-          "url": "https://x.com/DividendTalks/status/2112998749178056954"
-        },
-        {
-          "author": "@AmineTX",
-          "gist": "'The AI buildout has become a credit story' (CDS at all-time highs)",
-          "engagement": "Low reach, but a clear pro framing",
-          "url": "https://x.com/AmineTX/status/2113361146061160553"
-        }
-      ],
-      "addedAt": "2026-10-23T09:00:00-05:00"
-    },
-    {
-      "symbol": "SBUX",
-      "company": "Starbucks",
-      "earningsDate": "2026-10-29",
-      "move": "-1.7% AH",
-      "moveTone": "flat",
-      "sentiment": "bullish",
-      "sentimentLabel": "Mod. bullish",
-      "topTheme": "Fifth straight comps beat, weak international",
-      "updatedAt": "2026-10-30T09:50:00-05:00",
-      "changed": "",
-      "facts": [
-        {
-          "label": "Earnings",
-          "value": "Oct 29, after the close (fiscal Q4 2026)"
-        },
-        {
-          "label": "Stock reaction",
-          "value": "Closed up 2.24% at $105.51 before the print, then down 1.72% after hours"
-        },
-        {
-          "label": "Sentiment",
-          "value": "Moderately bullish on fundamentals, but the stock had already run up"
-        }
-      ],
-      "before": "Consensus was EPS of about $0.72 on $9.23B of revenue. Pros watched US comps and whether the turnaround could clear a raised bar, since the stock was up about 13% for the month (Mike Zaccardi's heat map).",
-      "after": "Global comps were +7.2% against +6.2% expected, and US comps were +7.7% with transactions up 2.4%. That is the fifth straight quarterly beat. EPS was $0.80 against $0.72. Revenue of $9.14B missed because the China business was sold. International comps were weak at +0.9% against about +3%. Fiscal 2027 guidance: about 4% North America comps, $3.15 to $3.25 EPS, and pricing below CPI. Restaurant analyst Jonathan Maze highlighted that over 80% of North America stores had positive comps, up from 50%.",
-      "controversy": "",
-      "posts": [
-        {
-          "author": "@jonathanmaze (Restaurant Business)",
-          "gist": "US comps +7.7%, ticket +5.2%, transactions +2.4%, fourth straight quarter of US growth",
-          "engagement": "20 likes, 1.6K views",
-          "url": "https://x.com/jonathanmaze/status/2115899325549092943"
-        },
-        {
-          "author": "@jonathanmaze",
-          "gist": "Niccol says Starbucks is 'probably a year ahead of schedule'",
-          "engagement": "9 likes, 1.3K views",
-          "url": "https://x.com/jonathanmaze/status/2115908055602757753"
-        },
-        {
-          "author": "@YahooFinance",
-          "gist": "Headline: comps +7.2% vs +6.2% expected",
-          "engagement": "27 likes, 11.1K views",
-          "url": "https://x.com/YahooFinance/status/2115903548856615354"
-        },
-        {
-          "author": "@WOLF_Financial",
-          "gist": "Non-GAAP operating margin 14.0%, up 460bps",
-          "engagement": "28 likes, 9.3K views",
-          "url": "https://x.com/WOLF_Financial/status/2115898860702691661"
-        }
-      ],
-      "addedAt": "2026-10-23T09:00:00-05:00"
-    },
-    {
-      "symbol": "RKT",
-      "company": "Rocket Companies",
-      "earningsDate": "2026-10-29",
-      "move": "Unverified",
-      "moveTone": "unverified",
-      "sentiment": "mixed",
-      "sentimentLabel": "Mixed",
-      "topTheme": "Share and margin gains, Q4 guide down about 10%",
-      "updatedAt": "2026-10-30T09:50:00-05:00",
-      "changed": "",
-      "facts": [
-        {
-          "label": "Earnings",
-          "value": "Oct 29, after the close (call at 3:30 PM CT)"
-        },
-        {
-          "label": "Stock reaction",
-          "value": "Unverified: one retail post claims up over 7% on the day and up 4% after hours. I could not confirm this from a price source"
-        },
-        {
-          "label": "Sentiment",
-          "value": "Mixed: share gains and margins good, Q4 guide soft"
-        }
-      ],
-      "before": "The bar was adjusted EPS of about $0.14 on about $2.58B of adjusted revenue. Pros watched market share gains (6.2% of purchases, 14.3% of refinances), mortgage rates at a 3-year high, and synergies from the Redfin and Mr. Cooper deals.",
-      "after": "GAAP revenue was $3.28B and adjusted revenue was $2.57B, roughly in line. Adjusted EPS of $0.15 beat by a penny. Adjusted EBITDA of $748M and adjusted net income of $419M were slightly light. The adjusted EBITDA margin of 29% was the highest in about five years. The Q4 adjusted revenue guide of $2.1B to $2.3B implies about a 10% drop, which ties it to rates. Discussion on X was thin and mostly bots and retail. Few institutional voices posted.",
-      "controversy": "",
-      "posts": [
-        {
-          "author": "@wallstengine",
-          "gist": "Scorecard: revenue and EPS beat, EBITDA and adjusted net income slight misses, Q4 guide",
-          "engagement": "66 likes, 12 reposts, 27.9K views",
-          "url": "https://x.com/wallstengine/status/2115902335742366038"
-        },
-        {
-          "author": "@Finsee_main",
-          "gist": "Rocket cut costs, but expects revenue to fall 10%",
-          "engagement": "1.5K views",
-          "url": "https://x.com/Finsee_main/status/2115921799955316810"
-        }
-      ],
-      "addedAt": "2026-10-23T09:00:00-05:00"
-    },
-    {
-      "symbol": "SPCX",
-      "company": "SpaceX",
-      "earningsDate": "2026-10-20",
-      "move": "+8.6%, then faded",
-      "moveTone": "flat",
-      "sentiment": "bullish",
-      "sentimentLabel": "Street bullish",
-      "topTheme": "AI segment over half of revenue, Tesla merger talk",
-      "updatedAt": "2026-10-30T09:50:00-05:00",
-      "changed": "",
-      "facts": [
-        {
-          "label": "What SPCX is",
-          "value": "SpaceX Class A stock on Nasdaq. It IPO'd at $135 on June 12, 2026"
-        },
-        {
-          "label": "Earnings",
-          "value": "Oct 20, after the close (Q3 2026, its second report as a public company)"
-        },
-        {
-          "label": "Stock reaction",
-          "value": "Up about 8.6% to about $160 on Oct 21, then fully gave it back. $144.75 on Oct 22, about $138 on Oct 30"
-        },
-        {
-          "label": "Sentiment",
-          "value": "Bullish from the Street, but the tape faded it"
-        },
-        {
-          "label": "Street moves",
-          "value": "JPMorgan raised its target to $500 from $240, Barclays to $300, Wells Fargo to $274, Citi to $240, UBS to $230"
-        }
-      ],
-      "before": "Consensus was about $12.7B to $13B of revenue. Pros watched AI compute and Starlink growth and a possible Tesla merger. Gary Black predicted SpaceX would buy Tesla at $420 a share in stock.",
-      "after": "Revenue was $14.6B, up 161%. EPS was $0.35 against $0.13. It posted its first profit as a public company, at $4.4B. The AI segment (AI cloud, Grok, Cursor) was about $7.6B, over half of revenue, with an adjusted EBITDA margin of about 66% per call notes. Musk called a Tesla merger a 'good idea', and both boards have special committees. Sell-side targets jumped, but the stock round-tripped within two days. Pros described the fade as valuation and supply concerns rather than a problem with the quarter.",
-      "controversy": "Tesla merger talk dominates the reach, which is mostly hype. Treat posts about deal terms as speculation.",
-      "posts": [
-        {
-          "author": "@JonErlichman",
-          "gist": "Expected 4-year profit growth: SpaceX +7,923%, top of the list (context, not a call)",
-          "engagement": "4.1K likes, 371 reposts, 531K views",
-          "url": "https://x.com/JonErlichman/status/2115961151154442706"
-        },
-        {
-          "author": "@fitz_keith (Keith Fitz-Gerald)",
-          "gist": "Pre-print watch list: AI and Starlink capacity, infrastructure spend, merger",
-          "engagement": "103 likes, 4.3K views",
-          "url": "https://x.com/fitz_keith/status/2112546821893443803"
-        },
-        {
-          "author": "@saso_capital",
-          "gist": "Call notes: superintelligence segment $7.6B, about 66% margin, pricing above plan",
-          "engagement": "13 likes, 3.0K views",
-          "url": "https://x.com/saso_capital/status/2112666950350336319"
-        },
-        {
-          "author": "@SurmountInvest",
-          "gist": "Relays Gary Black's call that SpaceX buys Tesla in stock",
-          "engagement": "Low reach",
-          "url": "https://x.com/SurmountInvest/status/2112200678735061367"
-        }
-      ],
-      "addedAt": "2026-10-23T09:00:00-05:00"
-    },
-    {
-      "symbol": "NVDA",
-      "company": "Nvidia",
-      "earningsDate": "2026-08-26",
-      "move": "+8.7% next day, gave back half by Aug 28",
-      "moveTone": "up",
-      "sentiment": "bullish",
-      "sentimentLabel": "Street bullish",
-      "topTheme": "About 70% FY28 growth outlook, margins squeezed by memory costs",
-      "updatedAt": "2026-10-30T10:40:00-05:00",
-      "changed": "Added Oct 30 by request. Covers the Q2 fiscal 2027 print on Aug 26; next report expected in late November.",
-      "facts": [
-        {
-          "label": "Earnings",
-          "value": "Aug 26, after the close (Q2 fiscal 2027, quarter ended July 26)"
-        },
-        {
-          "label": "Stock reaction",
-          "value": "Closed $209.66 on Aug 26, dipped after hours, then rose 8.7% to $227.98 on Aug 27. Fell 4.6% to $217.55 on Aug 28. About $213.66 at the Oct 29 close"
-        },
-        {
-          "label": "Sentiment",
-          "value": "Bullish from the Street, with gross margin the main worry"
-        },
-        {
-          "label": "Street moves",
-          "value": "Raymond James raised its target to $515 from $352, Bernstein to $400 from $315, BofA $350, JPMorgan $320 from $280, Citi, Mizuho, Oppenheimer and Stifel $315, Morgan Stanley and UBS $300"
-        }
-      ],
-      "before": "Consensus was about $92.2B of revenue and $2.09 of adjusted EPS, with the Q3 guide expected near $104B to $104.6B. Pros framed it as a print where a beat was assumed and the test was the size of the guide and whether margins held. The stock fell 1.6% into the report.",
-      "after": "Revenue was $96.2B, up 106%, and adjusted EPS was $2.22. Data center was $89.0B, up 117%. Q3 was guided to $108B, and management gave its first full-year outlook: about 70% revenue growth in fiscal 2028 against roughly 45% consensus, described as supply constrained. The stock dipped after hours on the margin guide, then ran on the call. Bernstein's Stacy Rasgon wrote that the quarter 'should remind NVIDIA investors why they own the stock.' The offset: gross margin guided to about 74% for Q3 and 71% to 72% in Q4 as memory costs rise, and supplier commitments jumped to about $279B from $119B.",
-      "controversy": "Margin compression from memory costs got the most pushback, and a WSJ report that Nvidia paused a credit support program for AI cloud providers revived vendor financing worries. Reports from The Information of a roughly $13B Hugging Face deal are unverified.",
-      "posts": [
-        {
-          "author": "@Beth_Kindig (Beth Kindig, I/O Fund)",
-          "gist": "On Fox Business after the print, argues Nvidia growth will stay stronger than the Street expects",
-          "engagement": "490 likes, 55 reposts, 144K views",
-          "url": "https://x.com/Beth_Kindig/status/2093788951215501620"
-        },
-        {
-          "author": "@Beth_Kindig (Beth Kindig, I/O Fund)",
-          "gist": "Revenue beat estimates by a record $4.06B as growth accelerated more than 20 points to 105.9%",
-          "engagement": "149 likes, 23 reposts, 52K views",
-          "url": "https://x.com/Beth_Kindig/status/2092732210134561262"
-        },
-        {
-          "author": "@StockMKTNewz",
-          "gist": "Relays WSJ report that Nvidia paused a financing program giving AI clouds credit support for a revenue share",
-          "engagement": "180 likes, 10 reposts, 45K views",
-          "url": "https://x.com/StockMKTNewz/status/2093096915286065396"
-        },
-        {
-          "author": "@BenBajarin (Ben Bajarin, Creative Strategies)",
-          "gist": "Nvidia would take every bit of extra capacity Intel could offer, a read on how supply constrained demand is",
-          "engagement": "137 likes, 12K views",
-          "url": "https://x.com/BenBajarin/status/2092725525911658612"
-        },
-        {
-          "author": "@commonsenseplay",
-          "gist": "Flags the CFO's memory pricing warning, with gross margin guided to 74% in Q3 and 71% to 72% in Q4",
-          "engagement": "99 likes, 12K views",
-          "url": "https://x.com/commonsenseplay/status/2092727685785227511"
-        }
-      ],
-      "addedAt": "2026-10-30T10:40:00-05:00"
+     "label": "Stock move",
+     "value": "Up about 4% after hours Oct 28, roughly flat at the Oct 29 close"
     }
-  ],
-  "method": "I searched X with date limits around each earnings date, using cashtags, company names and themes. I also ran searches limited to a list of professional accounts, such as research desks, the sell-side, former fund managers and trade journalists. Posts were ranked by likes, reposts and views. Memes, options-flow promoters, bot recaps and low-follower hype were dropped. X's API cannot filter by engagement, so ranking was done by hand. Stock moves and analyst targets come from CNBC, AP, Yahoo Finance, Benzinga and Investing.com. Engagement counts were captured on Oct 30 and will keep changing. The RKT stock move is unverified. Pro reach on X is modest overall. The best-known names (sell-side analysts, PMs) mostly do not post on X, so the Street views here come from news coverage of their notes.",
-  "sources": [
+   ],
+   "controversy": "",
+   "posts": [
     {
-      "title": "Alphabet Q3: what analysts say",
-      "site": "CNBC",
-      "url": "https://www.cnbc.com/2026/10/29/alphabet-q3-earnings-analyst-reaction.html"
+     "author": "@wallstengine",
+     "gist": "Scorecard: revenue, EPS, operating income all beat; Azure +48%",
+     "date": "2026-10-28T15:05:25-05:00",
+     "views": 114274,
+     "likes": 636,
+     "reposts": 127,
+     "excerpt": "MICROSOFT $MSFT Q1’27 EARNINGS HIGHLIGHTS Revenue: $92.3B (Est. $90.69B) ; +19% YoY Adj. EPS: $4.89 (Est. $4.73) ; +18% YoY Oper Income: $45.9B (Est. $44.06B) ; +21% YoY Adj. Net Income: $36.4B (Est. $35.13B) Azure: ...",
+     "engagement": "114,274 views, 636 likes, 127 reposts",
+     "url": "https://x.com/wallstengine/status/2115535427599765939"
     },
     {
-      "title": "Microsoft beat: what analysts say",
-      "site": "CNBC",
-      "url": "https://www.cnbc.com/2026/10/29/microsoft-beat-the-street-on-earnings-report-heres-what-analysts-say.html"
+     "author": "@wallstengine",
+     "gist": "Guidance: Azure +49% to 50% vs 44.6% expected, demand exceeds supply, capex trimmed",
+     "date": "2026-10-28T17:07:13-05:00",
+     "views": 37018,
+     "likes": 210,
+     "reposts": 25,
+     "excerpt": "Microsoft $MSFT Outlook Q2 Revenue: $96.0B-$97.1B (Est. $95.62B) Q2 Azure: +49% to +50% CC (Est. +44.6%) Azure: Demand continues to exceed available supply CY26 CapEx: ~$170B, lowered on 3rd-party capacity delays ...",
+     "engagement": "37,018 views, 210 likes, 25 reposts",
+     "url": "https://x.com/wallstengine/status/2115566078462148625"
     },
     {
-      "title": "Meta sinks as FCF turns negative",
-      "site": "CNBC",
-      "url": "https://www.cnbc.com/2026/10/22/meta-stock-q3-earnings-free-cash-flow.html"
+     "author": "@Fiscal_ai",
+     "gist": "Cloud growth league table: Google Cloud +103%, Azure +48%, AWS +39%",
+     "date": "2026-10-29T15:30:03-05:00",
+     "views": 28216,
+     "likes": 386,
+     "reposts": 60,
+     "excerpt": "Here's the latest growth rates for the big 3 cloud providers. Google Cloud: +103% Microsoft Azure: +48% Amazon Web Services: +39% $GOOGL $MSFT $AMZN",
+     "engagement": "28,216 views, 386 likes, 60 reposts",
+     "url": "https://x.com/Fiscal_ai/status/2115904014747644203"
     },
     {
-      "title": "Meta Q3 2026 results release",
-      "site": "Meta IR",
-      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx"
-    },
-    {
-      "title": "Meta free cash flow turns negative",
-      "site": "Benzinga",
-      "url": "https://www.benzinga.com/markets/earnings/26/10/62530530/meta-free-cash-flow-negative-first-time-since-2012-capex"
-    },
-    {
-      "title": "SpaceX Q3: what analysts say",
-      "site": "CNBC",
-      "url": "https://www.cnbc.com/2026/10/21/spacex-stock-q3-earnings-analysts.html"
+     "author": "@TheTranscript_",
+     "gist": "CFO: customer demand continues to exceed available supply",
+     "date": "2026-10-28T17:13:36-05:00",
+     "views": 7302,
+     "likes": 29,
+     "reposts": 7,
+     "excerpt": "$MSFT Microsoft CFO on Azure demand: \"Customer demand continues to exceed available supply.”",
+     "engagement": "7,302 views, 29 likes, 7 reposts",
+     "url": "https://x.com/TheTranscript_/status/2115567686986121596"
     }
-  ],
-  "requests": {
-    "repo": "LongOnlyAnalyst/sentiment",
-    "label": "request",
-    "show": true
+   ]
+  },
+  {
+   "symbol": "AMZN",
+   "company": "Amazon",
+   "driver": {
+    "type": "Earnings",
+    "title": "AWS accelerated to 39% but capex and negative free cash flow dominated",
+    "date": "2026-10-29"
+   },
+   "move": "About -7% premarket Oct 30",
+   "moveTone": "down",
+   "sentiment": "mixed",
+   "sentimentLabel": "Mixed",
+   "verdict": "Mixed: AWS is the fastest in five years, but the stock is priced on the cash bill.",
+   "topTheme": "AWS +39% vs negative free cash flow",
+   "updatedAt": "2026-10-30T11:00:00-05:00",
+   "addedAt": "2026-10-23T09:00:00-05:00",
+   "changed": "Reframed as event-driven. Added the Oct 30 target changes.",
+   "overview": {
+    "lean": "Mixed, leaning bearish on the tape, bullish from the Street.",
+    "camps": [
+     {
+      "name": "AWS bulls",
+      "argues": "AWS at 39% with a $578B backlog and a 40%+ growth outlook for 2027 and 2028 justifies the spend."
+     },
+     {
+      "name": "Cash skeptics",
+      "argues": "$77.3B of quarterly capex and negative trailing free cash flow make the stock hard to own near term."
+     }
+    ],
+    "agree": "Agree AWS accelerated meaningfully.",
+    "split": "Split on whether the cash burn is worth it; analysts nudged targets up while the stock fell.",
+    "shift": [
+     {
+      "date": "2026-10-26",
+      "note": "UBS raised its target to $348 ahead of the print, betting on AWS margins."
+     },
+     {
+      "date": "2026-10-29",
+      "note": "Revenue and EPS slightly missed; capex far above estimates."
+     },
+     {
+      "date": "2026-10-30",
+      "note": "Down about 7% premarket even as several targets rose."
+     }
+    ],
+    "hinges": "Whether AWS growth turns into cash before investors lose patience with capex."
+   },
+   "whatHappened": "Amazon reported Q3 on Oct 29. AWS grew 39.3% to $46.0B (Oct 29), its fastest in nearly five years, with a $578B backlog. Revenue of $201.9B and EPS of $1.89 slightly missed (Oct 29). Capex was $77.3B in the quarter versus about $57.5B expected, and trailing free cash flow was negative $42.4B (Oct 29). The stock traded down about 7% premarket on Oct 30 near $226.",
+   "howReading": "Credible voices split cleanly: AWS acceleration is real and Jassy guided to 40%+ growth in 2027 and 2028, but after Alphabet's cash burn the market is pricing hyperscalers on free cash flow. Sell-side targets mostly rose (UBS to $352) even as the stock fell.",
+   "facts": [
+    {
+     "label": "AWS",
+     "value": "$46.0B, +39.3% (Oct 29)"
+    },
+    {
+     "label": "Capex",
+     "value": "$77.3B vs about $57.5B expected (Oct 29)"
+    },
+    {
+     "label": "Free cash flow",
+     "value": "Negative $42.4B trailing twelve months (Oct 29)"
+    },
+    {
+     "label": "Stock move",
+     "value": "About -7% premarket Oct 30 near $226"
+    },
+    {
+     "label": "Street moves",
+     "value": "UBS target $348 to $352 (Oct 30)"
+    }
+   ],
+   "controversy": "",
+   "posts": [
+    {
+     "author": "@Beth_Kindig (Beth Kindig, I/O Fund)",
+     "gist": "AWS +39.3% to $46B, Jassy projecting 40%+ growth in 2027 and 2028",
+     "date": "2026-10-29T15:46:15-05:00",
+     "views": 30633,
+     "likes": 300,
+     "reposts": 18,
+     "excerpt": "AWS $AMZN revenue rose 39.3% YoY to $46 billion, accelerating from 36.8% in Q2 and marking its fastest growth in nearly five years. CEO Andy Jassy also said Amazon is projecting \"revenue growth rates of over 40% both in ...",
+     "engagement": "30,633 views, 300 likes, 18 reposts",
+     "url": "https://x.com/Beth_Kindig/status/2115908093662101577"
+    },
+    {
+     "author": "@TheTranscript_",
+     "gist": "Free cash flow trend chart for big tech this season",
+     "date": "2026-10-29T15:39:18-05:00",
+     "views": 14093,
+     "likes": 102,
+     "reposts": 21,
+     "excerpt": "FCF trends for big tech that have reported so far: $MSFT $META $GOOG $AMZN $GOOGL",
+     "engagement": "14,093 views, 102 likes, 21 reposts",
+     "url": "https://x.com/TheTranscript_/status/2115906344096309517"
+    },
+    {
+     "author": "@KyleReidhead",
+     "gist": "UBS preview: AWS operating margin 46% in 2027 vs 38% consensus, target $348",
+     "date": "2026-10-26T07:30:05-05:00",
+     "views": 6544,
+     "likes": 39,
+     "reposts": 2,
+     "excerpt": "UBS just published its earnings preview for Amazon's Q3 print on Oct 29 Here's why they kept Buy on $AMZN and raised their price target to $348: 1. Sees AWS operating margin hitting 46% in 2027, vs 38% consensus 2. ...",
+     "engagement": "6,544 views, 39 likes, 2 reposts",
+     "url": "https://x.com/KyleReidhead/status/2114696065006084565"
+    },
+    {
+     "author": "@TipRanks",
+     "gist": "Post-print target changes, AWS strength vs free cash flow pressure",
+     "date": "2026-10-30T07:33:43-05:00",
+     "views": 4361,
+     "likes": 67,
+     "reposts": 2,
+     "excerpt": "Wall Street updates its price targets on Amazon $AMZN following its Q3 earnings, with analysts highlighting strong long-term AWS growth despite rising AI spending and free cash flow pressure: UBS: $348 $352 (Buy) - AWS ...",
+     "engagement": "4,361 views, 67 likes, 2 reposts",
+     "url": "https://x.com/TipRanks/status/2116146531233329410"
+    },
+    {
+     "author": "@steady_profits",
+     "gist": "Miss on revenue and EPS, capex $77.3B vs $57.5B expected",
+     "date": "2026-10-29T15:13:16-05:00",
+     "views": 1889,
+     "likes": 34,
+     "reposts": 4,
+     "excerpt": "It's an earnings and revenue miss from $AMZN. - Revenue: $201.9B vs $202.3B est. - EPS: $1.89 vs $1.96 est. - Operating income: $28.1B vs $26B est. - AWS: $46.0B vs $45.4B est. - Capex: $77.3B vs $57.5B est. - TTM free ...",
+     "engagement": "1,889 views, 34 likes, 4 reposts",
+     "url": "https://x.com/steady_profits/status/2115899792010236227"
+    }
+   ]
+  },
+  {
+   "symbol": "META",
+   "company": "Meta Platforms",
+   "driver": {
+    "type": "Equity raise",
+    "title": "Up to $97.5B equity raise with nonvoting Class C shares, offset by Muse momentum",
+    "date": "2026-10-26"
+   },
+   "move": "About -2% Oct 26, about -1% Oct 27, -1.2% to -1.4% Oct 29",
+   "moveTone": "down",
+   "sentiment": "mixed",
+   "sentimentLabel": "Mixed",
+   "verdict": "Mixed: a record equity raise and dilution weigh on the stock, offset by Muse momentum and Nvidia buying in.",
+   "topTheme": "Equity raise and Class C vs Muse momentum",
+   "updatedAt": "2026-10-30T11:00:00-05:00",
+   "addedAt": "2026-10-23T09:00:00-05:00",
+   "changed": "Driver changed from Q3 earnings to the Oct 26 equity raise, with Muse momentum as the offset.",
+   "overview": {
+    "lean": "Mixed.",
+    "camps": [
+     {
+      "name": "Dilution and governance bears",
+      "argues": "Up to $97.5B of stock, nonvoting Class C shares and a pension fund lawsuit mean shareholders fund AI while Zuckerberg keeps control."
+     },
+     {
+      "name": "Muse bulls",
+      "argues": "Muse is one of the fastest-growing consumer AI apps and Nvidia and AMD are investing $4B alongside, so the spend has a product."
+     }
+    ],
+    "agree": "Agree the raise is about funding AI capex after free cash flow turned negative.",
+    "split": "Split on whether Muse engagement is durable; one Sensor Tower based post says most users stopped returning after two weeks (low reach, unverified).",
+    "shift": [
+     {
+      "date": "2026-10-26",
+      "note": "Raise announced: $35B underwritten plus a $60B Class C at-the-market program. Stock down nearly 2%."
+     },
+     {
+      "date": "2026-10-27",
+      "note": "Upsized to $25B common at $625 plus $12.5B preferred. Nvidia commits $3B and expands the Muse partnership. Pension fund sues over the restructuring."
+     },
+     {
+      "date": "2026-10-29",
+      "note": "Offerings close; stock down about 1.2% on dilution worries."
+     }
+    ],
+    "hinges": "Whether Muse and AI revenue grow fast enough to justify roughly 5% to 6% dilution and the credit-market stress."
+   },
+   "whatHappened": "On Oct 26 Meta launched its largest-ever equity raise: $25B of Class A common priced at $625 via forward sales (no upfront cash, settles by Nov 19, 2027), $12.5B of 6.50% mandatory convertible preferred, and a planned $60B at-the-market program in new nonvoting Class C shares starting in Q1 2027. On Oct 27 Nvidia committed $3B and AMD $1B, and Nvidia expanded its partnership on Muse, Meta's AI agent. This followed Q3 results on Oct 21 with negative free cash flow of $2.12B and record 5-year CDS spreads.",
+   "howReading": "Credible voices read it as Meta funding AI with shareholders' money while protecting Zuckerberg's control, which is why Barron's and a pension fund lawsuit focused on the Class C structure. Analysts estimate full execution could dilute holders by about 5% to 6% (Investing.com, Oct 29). The offset is Muse: Nvidia's investment and the expanded partnership are read as validation of demand. The credit angle (record CDS after Q3) keeps the debate in the bond market too.",
+   "facts": [
+    {
+     "label": "Equity raise",
+     "value": "$25B common at $625 plus $12.5B preferred, priced Oct 27; up to $97.5B including the $60B Class C program"
+    },
+    {
+     "label": "Strategic buyers",
+     "value": "Nvidia $3B, AMD $1B (Oct 27)"
+    },
+    {
+     "label": "Stock move",
+     "value": "Closed $630.56, down nearly 2%, on Oct 26; about -1% Oct 27; about -1.2% to $623 on Oct 29 per Investing.com"
+    },
+    {
+     "label": "Free cash flow",
+     "value": "Negative $2.12B in Q3 (Oct 21)"
+    }
+   ],
+   "controversy": "The nonvoting Class C share and a pension fund lawsuit over the restructuring (reported Oct 27). Treat Muse usage stats on X as unverified.",
+   "posts": [
+    {
+     "author": "@TheTranscript_",
+     "gist": "Capex roundup: Meta $135B to $145B, continuing to invest aggressively",
+     "date": "2026-10-29T07:35:23-05:00",
+     "views": 10239,
+     "likes": 55,
+     "reposts": 7,
+     "excerpt": "Big tech CapEx: $MSFT: ~$170B CapEx for FY 26/27, \"...to accelerate in H2 26/27\" $GOOGL: holding at $195-205B for 2026, “...to increase significantly in 2027” $META: $135-145B for 2026, \"we expect to continue investing ...",
+     "engagement": "10,239 views, 55 likes, 7 reposts",
+     "url": "https://x.com/TheTranscript_/status/2115784562026700923"
+    },
+    {
+     "author": "@Sam_Badawi",
+     "gist": "Pension fund sues Meta and Zuckerberg over the stock restructuring that lets him sell while keeping control",
+     "date": "2026-10-27T09:11:55-05:00",
+     "views": 9129,
+     "likes": 81,
+     "reposts": 6,
+     "excerpt": "Meta Platforms $META and Mark Zuckerberg face a new lawsuit from a pension fund challenging the company's stock restructuring, which would allow Zuckerberg to sell billions in shares while retaining voting control. The ...",
+     "engagement": "9,129 views, 81 likes, 6 reposts",
+     "url": "https://x.com/Sam_Badawi/status/2115084080408834544"
+    },
+    {
+     "author": "@barronsonline (Barron's)",
+     "gist": "Meta moved swiftly to get the $95B offering out; Class C shares protect Zuckerberg's voting interest",
+     "date": "2026-10-26T09:41:17-05:00",
+     "views": 3614,
+     "likes": 3,
+     "reposts": 1,
+     "excerpt": "Meta Platforms worked swiftly to get the $95 billion equity offering out ahead of other Big Tech deals. Class C shares are designed to protect CEO Mark Zuckerberg’s voting interest.",
+     "engagement": "3,614 views, 3 likes, 1 reposts",
+     "url": "https://x.com/barronsonline/status/2114729083187646851"
+    },
+    {
+     "author": "@neilsethinew",
+     "gist": "The filing showed management's long-range plan needs to raise hundreds of billions",
+     "date": "2026-10-26T07:38:03-05:00",
+     "views": 2660,
+     "likes": 22,
+     "reposts": 6,
+     "excerpt": "That didn’t take long. When Meta Platforms ($META) unveiled its new non-voting Class C shares alongside earnings last week, I noted that its filing showed management’s long-range plan needing to raise “hundreds of ...",
+     "engagement": "2,660 views, 22 likes, 6 reposts",
+     "url": "https://x.com/neilsethinew/status/2114698067794346240"
+    }
+   ]
+  },
+  {
+   "symbol": "SBUX",
+   "company": "Starbucks",
+   "driver": {
+    "type": "Earnings",
+    "title": "Fifth straight comps beat and fiscal 2027 EPS guide above consensus",
+    "date": "2026-10-29"
+   },
+   "move": "+2.2% to $105.51 Oct 29, about -2% after hours",
+   "moveTone": "flat",
+   "sentiment": "bullish",
+   "sentimentLabel": "Bullish",
+   "verdict": "Bullish on fundamentals: the turnaround is turning into growth, but the stock had already run up.",
+   "topTheme": "US comps +7.7%, guide above Street",
+   "updatedAt": "2026-10-30T11:00:00-05:00",
+   "addedAt": "2026-10-23T09:00:00-05:00",
+   "changed": "Added Oct 30 analyst moves. Call unchanged.",
+   "overview": {
+    "lean": "Moderately bullish.",
+    "camps": [
+     {
+      "name": "Turnaround bulls",
+      "argues": "US comps +7.7% with traffic up and margins recovering; BMO calls it its top restaurant pick."
+     },
+     {
+      "name": "Valuation holds",
+      "argues": "Valuation already prices in the turnaround; William Blair and Citi stay at Hold."
+     }
+    ],
+    "agree": "Agree the quarter was clean and comps beat for a fifth straight time.",
+    "split": "Split on valuation and how fast North America comps normalize toward about 4%.",
+    "shift": [
+     {
+      "date": "2026-10-29",
+      "note": "Rallied 2.2% into the print, then dipped about 2% after hours."
+     },
+     {
+      "date": "2026-10-30",
+      "note": "BMO, Evercore and BTIG reiterate buy-equivalents; Citi raises target to $107."
+     }
+    ],
+    "hinges": "Whether North America margins expand enough on about 4% comps to justify the multiple."
+   },
+   "whatHappened": "Starbucks reported fiscal Q4 on Oct 29. Global comps were +7.2% vs about +6% expected and US comps +7.7% (Oct 29). EPS was $0.80 vs $0.72; revenue of $9.14B missed after the China stake sale. Fiscal 2027 EPS guidance of $3.15 to $3.25 sits above the $3.13 consensus (Oct 29).",
+   "howReading": "Restaurant specialists and the sell-side read it as the turnaround becoming a growth plan. Jonathan Maze (Restaurant Business) highlighted traffic and that Niccol says Starbucks is about a year ahead of schedule. Holds focus on valuation.",
+   "facts": [
+    {
+     "label": "Comps",
+     "value": "Global +7.2%, US +7.7% (Oct 29)"
+    },
+    {
+     "label": "EPS",
+     "value": "$0.80 vs $0.72 expected (Oct 29)"
+    },
+    {
+     "label": "FY27 guide",
+     "value": "EPS $3.15 to $3.25 vs $3.13 consensus (Oct 29)"
+    },
+    {
+     "label": "Stock move",
+     "value": "Closed $105.51, +2.2%, Oct 29; down about 2% after hours"
+    },
+    {
+     "label": "Street moves",
+     "value": "BMO Outperform $130, Evercore $120, BTIG Buy $115, Citi target $107 (Oct 30)"
+    }
+   ],
+   "controversy": "",
+   "posts": [
+    {
+     "author": "@YahooFinance",
+     "gist": "Comps +7.2% vs +6.2% expected",
+     "date": "2026-10-29T15:28:12-05:00",
+     "views": 11244,
+     "likes": 28,
+     "reposts": 8,
+     "excerpt": "$SBUX earnings beat Wall Street's expectations on Thursday, as the company looked to move beyond its turnaround plan to accelerate growth. For the fifth consecutive quarter, the coffee giant posted better-than-expected ...",
+     "engagement": "11,244 views, 28 likes, 8 reposts",
+     "url": "https://x.com/YahooFinance/status/2115903548856615354"
+    },
+    {
+     "author": "@WOLF_Financial",
+     "gist": "Non-GAAP operating margin 14.0%, up 460bps",
+     "date": "2026-10-29T15:09:34-05:00",
+     "views": 9507,
+     "likes": 29,
+     "reposts": 4,
+     "excerpt": "STARBUCKS $SBUX JUST REPORTED Q4 EARNINGS - Revenue: $9.14B, missing expectations of $9.23B - Adj EPS: $0.80, beating expectations of $0.72 - Global Comps: +7.2% - Non-GAAP Oper Margin: 14.0% (+460 bps YoY) Comparable ...",
+     "engagement": "9,507 views, 29 likes, 4 reposts",
+     "url": "https://x.com/WOLF_Financial/status/2115898860702691661"
+    },
+    {
+     "author": "@jonathanmaze (Restaurant Business)",
+     "gist": "US comps +7.7%, transactions +2.4%",
+     "date": "2026-10-29T15:11:25-05:00",
+     "views": 1658,
+     "likes": 20,
+     "reposts": 0,
+     "excerpt": "Starbucks U.S. same-store sales up 7.7%. Average ticket up 5.2%. Transaction count up 2.4%. That is the fourth straight quarter of domestic growth. Worldwide, comps up 7.2%. That's the fifth straight positive quarter. ...",
+     "engagement": "1,658 views, 20 likes, 0 reposts",
+     "url": "https://x.com/jonathanmaze/status/2115899325549092943"
+    },
+    {
+     "author": "@jonathanmaze (Restaurant Business)",
+     "gist": "Niccol: Starbucks is probably a year ahead of schedule",
+     "date": "2026-10-29T15:46:06-05:00",
+     "views": 1340,
+     "likes": 9,
+     "reposts": 0,
+     "excerpt": "Brian Niccol saying that the company is \"probably a year ahead of schedule.\" Starbucks is projecting 4% same-store sales growth this year. \"The business is on really strong footing.\" $SBUX",
+     "engagement": "1,340 views, 9 likes, 0 reposts",
+     "url": "https://x.com/jonathanmaze/status/2115908055602757753"
+    }
+   ]
+  },
+  {
+   "symbol": "RKT",
+   "company": "Rocket Companies",
+   "driver": {
+    "type": "Earnings",
+    "title": "Q3 beat with best margin in about five years, soft Q4 guide",
+    "date": "2026-10-29"
+   },
+   "move": "+3.0% to $11.92 Oct 29, opened $12.57 Oct 30",
+   "moveTone": "up",
+   "sentiment": "mixed",
+   "sentimentLabel": "Mixed",
+   "verdict": "Mixed: a clean beat and share gains, but a Q4 guide down about 10% ties it to rates.",
+   "topTheme": "Margins up, Q4 guide down",
+   "updatedAt": "2026-10-30T11:00:00-05:00",
+   "addedAt": "2026-10-23T09:00:00-05:00",
+   "changed": "Stock move now verified from Investing.com and MarketBeat (previously unverified).",
+   "overview": {
+    "lean": "Mixed, leaning positive on the tape.",
+    "camps": [
+     {
+      "name": "Execution bulls",
+      "argues": "Share gains in purchase and refi and a 29% adjusted EBITDA margin, the best in about five years."
+     },
+     {
+      "name": "Rate skeptics",
+      "argues": "Q4 adjusted revenue guide of $2.1B to $2.3B implies about a 10% drop with mortgage rates at a 3-year high."
+     }
+    ],
+    "agree": "Agree the quarter beat.",
+    "split": "Split on whether execution can offset the rate backdrop.",
+    "shift": [
+     {
+      "date": "2026-10-26",
+      "note": "An executive order on mortgage insurance put mortgage names on watch."
+     },
+     {
+      "date": "2026-10-29",
+      "note": "Rose 3.0% into the print, then traded both ways after hours."
+     },
+     {
+      "date": "2026-10-30",
+      "note": "Gapped up to $12.57, then near $12.32."
+     }
+    ],
+    "hinges": "Mortgage rates and Q4 origination volume."
+   },
+   "whatHappened": "Rocket reported Q3 on Oct 29. Adjusted EPS was $0.15 vs $0.14, adjusted revenue $2.57B roughly in line, GAAP revenue $3.28B (Oct 29). Adjusted EBITDA margin of 29% was the highest in about five years. Q4 adjusted revenue guidance of $2.1B to $2.3B implies about a 10% drop.",
+   "howReading": "X discussion was thin and mostly recaps; few institutional voices posted. The read: good execution in a bad rate tape. The stock rose on the beat, but the guide keeps it tied to rates.",
+   "facts": [
+    {
+     "label": "Adjusted EPS",
+     "value": "$0.15 vs $0.14 expected (Oct 29)"
+    },
+    {
+     "label": "Q4 guide",
+     "value": "Adjusted revenue $2.1B to $2.3B (Oct 29)"
+    },
+    {
+     "label": "Stock move",
+     "value": "Closed $11.92, +3.0%, Oct 29; opened $12.57 Oct 30 then near $12.32 per MarketBeat"
+    }
+   ],
+   "controversy": "",
+   "posts": [
+    {
+     "author": "@wallstengine",
+     "gist": "Scorecard: revenue and EPS beat, EBITDA slight miss, Q4 guide",
+     "date": "2026-10-29T15:23:23-05:00",
+     "views": 28002,
+     "likes": 66,
+     "reposts": 12,
+     "excerpt": "ROCKET COMPANIES $RKT Q3’26 EARNINGS HIGHLIGHTS Revenue: $3.28B (Est. $2.64B) Adj. EPS: $0.15 (Est. $0.14) Adj. Revenue: $2.57B GAAP EPS: $0.25 Adj. EBITDA: $748M (Est. $753M) Adj. Net Income: $419M (Est. $425M) GAAP ...",
+     "engagement": "28,002 views, 66 likes, 12 reposts",
+     "url": "https://x.com/wallstengine/status/2115902335742366038"
+    },
+    {
+     "author": "@StephenCFU",
+     "gist": "Adjusted EPS $0.15 beat, revenue in line",
+     "date": "2026-10-29T15:09:02-05:00",
+     "views": 7619,
+     "likes": 191,
+     "reposts": 13,
+     "excerpt": "$RKT (Rocket Companies) Down 1.3% after hours, as of 4:09 PM ET Earnings per share (adjusted): $0.15 (beat) Estimated earnings per share: $0.13 Revenue (adjusted): $2.57B (in line) Estimated revenue: $2.59B",
+     "engagement": "7,619 views, 191 likes, 13 reposts",
+     "url": "https://x.com/StephenCFU/status/2115898726489211107"
+    }
+   ]
+  },
+  {
+   "symbol": "SPCX",
+   "company": "SpaceX",
+   "driver": {
+    "type": "M&A",
+    "title": "Tesla merger debate and the Dec 8 lockup overhang",
+    "date": "2026-10-29"
+   },
+   "move": "About $143.89 on Oct 29, down 0.92% (unverified, from an X tracker)",
+   "moveTone": "flat",
+   "sentiment": "mixed",
+   "sentimentLabel": "Mixed",
+   "verdict": "Mixed: merger hype on X versus supply concerns from the Dec 8 unlock and a likely share sale.",
+   "topTheme": "Tesla merger talk vs share supply",
+   "updatedAt": "2026-10-30T11:00:00-05:00",
+   "addedAt": "2026-10-23T09:00:00-05:00",
+   "changed": "Driver changed from Oct 20 earnings to the merger debate and share-supply overhang.",
+   "overview": {
+    "lean": "Mixed.",
+    "camps": [
+     {
+      "name": "Merger bulls",
+      "argues": "Special committees exist and Musk called a combination a good idea; Tesla retail holders are organizing support."
+     },
+     {
+      "name": "Supply skeptics",
+      "argues": "About 798M shares unlock on Dec 8 and an analyst expects a new share sale that could drop the stock 5% to 10%."
+     }
+    ],
+    "agree": "Agree no terms, price or vote date exist yet.",
+    "split": "Split on whether a merger helps SpaceX holders at all; some Tesla bulls oppose it.",
+    "shift": [
+     {
+      "date": "2026-10-26",
+      "note": "Tesla retail letter in support of a merger tops $10B of shares."
+     },
+     {
+      "date": "2026-10-27",
+      "note": "Closed $148.58, up 1.14% (X tracker, unverified)."
+     },
+     {
+      "date": "2026-10-29",
+      "note": "Closed $143.89, down 0.92% (X tracker, unverified); high-reach post argues against the merger."
+     },
+     {
+      "date": "2026-10-30",
+      "note": "Milk Road analyst expects an equity raise."
+     }
+    ],
+    "hinges": "Whether merger terms arrive before the Dec 8 unlock."
+   },
+   "whatHappened": "No single hard event in the last five days. The stock drifted lower after round-tripping its Oct 20 earnings pop, while the Tesla merger debate dominated reach and investors watched the Dec 8 unlock of about 798M shares. Both boards have special committees, but there are no terms.",
+   "howReading": "Most high-reach merger posts are retail advocacy, so treat them as speculation. Credible voices focus on supply: the lockup and a likely share sale. The long-term growth story (JonErlichman's 4-year profit growth chart) still draws the most attention.",
+   "facts": [
+    {
+     "label": "What SPCX is",
+     "value": "SpaceX Class A stock on Nasdaq, IPO at $135 on June 12, 2026"
+    },
+    {
+     "label": "Unlock",
+     "value": "About 798M shares on Dec 8 (per X posts, unverified)"
+    },
+    {
+     "label": "Stock move",
+     "value": "$148.58 Oct 27, $143.89 Oct 29 (X tracker, unverified)"
+    }
+   ],
+   "controversy": "Tesla merger talk is mostly hype; treat deal-term posts as speculation.",
+   "posts": [
+    {
+     "author": "@JonErlichman",
+     "gist": "Expected 4-year profit growth chart, SpaceX at the top (context, not a call)",
+     "date": "2026-10-29T19:17:05-05:00",
+     "views": 547321,
+     "likes": 4204,
+     "reposts": 378,
+     "excerpt": "Expected profit growth in next 4 years: SpaceX: +7,923% Marvell: +508% AMD: +501% Arm: +335% Palantir: +334% Broadcom: +306% Celestica: +285% Oracle: +193% Nvidia: +168% Vertiv: +112% Arista: +112% TSMC: +110% ...",
+     "engagement": "547,321 views, 4204 likes, 378 reposts",
+     "url": "https://x.com/JonErlichman/status/2115961151154442706"
+    },
+    {
+     "author": "@TeslarkMan",
+     "gist": "Argues against a SpaceX-Tesla merger",
+     "date": "2026-10-29T01:14:15-05:00",
+     "views": 13318,
+     "likes": 113,
+     "reposts": 15,
+     "excerpt": "Why I’m Against a SpaceX-Tesla Merger I see some people trying to frame this debate in a strange way, but the real question isn’t whether SpaceX is a great company or how much synergy there could be between SpaceX & ...",
+     "engagement": "13,318 views, 113 likes, 15 reposts",
+     "url": "https://x.com/TeslarkMan/status/2115688647718846471"
+    },
+    {
+     "author": "@MilkRoadStocks",
+     "gist": "Analyst expects SpaceX to sell new shares, stock drops 5% to 10% when announced",
+     "date": "2026-10-30T06:15:21-05:00",
+     "views": 2593,
+     "likes": 13,
+     "reposts": 2,
+     "excerpt": "Our analyst Vincent expects $SPCX to raise money by selling new shares, and says the stock drops \"five to 10% for sure\" when it's announced. He's fine with it as a shareholder. \"Go for 20 gigawatts, raise all the money ...",
+     "engagement": "2,593 views, 13 likes, 2 reposts",
+     "url": "https://x.com/MilkRoadStocks/status/2116126807229694172"
+    }
+   ]
+  },
+  {
+   "symbol": "NVDA",
+   "company": "Nvidia",
+   "driver": {
+    "type": "Analyst or regulatory",
+    "title": "DOJ inquiry into the $12.9B Hugging Face deal, plus a $3B Meta investment",
+    "date": "2026-10-28"
+   },
+   "move": "-1% to -1.7% on Oct 28",
+   "moveTone": "down",
+   "sentiment": "mixed",
+   "sentimentLabel": "Mixed",
+   "verdict": "Mixed: regulatory overhang from the DOJ, offset by expanding Meta demand.",
+   "topTheme": "DOJ on Hugging Face vs Meta deal",
+   "updatedAt": "2026-10-30T11:00:00-05:00",
+   "addedAt": "2026-10-30T10:40:00-05:00",
+   "changed": "Driver changed from the Aug 26 earnings to the Oct 28 DOJ inquiry and Oct 27 Meta investment.",
+   "overview": {
+    "lean": "Mixed, with the Street still bullish on fundamentals.",
+    "camps": [
+     {
+      "name": "Regulatory worriers",
+      "argues": "DOJ questions on Hugging Face and on tying chip allocations to other products could constrain Nvidia's deal and investing strategy."
+     },
+     {
+      "name": "Demand bulls",
+      "argues": "Meta is expanding Vera Rubin deployment and Muse work; Nvidia is investing $3B, showing demand is intact."
+     }
+    ],
+    "agree": "Agree the DOJ step is an inquiry, not a lawsuit.",
+    "split": "Split on circular financing: Nvidia funding a top customer is read as validation by some and a red flag by others.",
+    "shift": [
+     {
+      "date": "2026-10-27",
+      "note": "Nvidia commits $3B to Meta's offering and expands the Muse partnership. Stock flat."
+     },
+     {
+      "date": "2026-10-28",
+      "note": "Reuters reports the DOJ inquiry; stock slips 1% to 1.7%."
+     }
+    ],
+    "hinges": "Whether the DOJ moves from questions to action before the Hugging Face deal closes in the first half of 2027."
+   },
+   "whatHappened": "On Oct 28 Reuters reported the DOJ is asking whether Nvidia's $12.93B Hugging Face purchase would let it control a key distribution point for AI, as part of a broader conduct probe covering sales practices. Shares slipped 1% to 1.7% that day. A day earlier, Nvidia committed $3B to Meta's equity offering and Meta agreed to expand Vera Rubin deployment. Its last earnings were Aug 26; the next report date was just announced.",
+   "howReading": "Headline accounts with the largest reach (Walter Bloomberg, Investing.com, WOLF) carried the DOJ story; analysis was limited. Credible voices treat it as an overhang rather than a thesis change, while the Meta investment revived circular-financing worries.",
+   "facts": [
+    {
+     "label": "Regulatory",
+     "value": "DOJ inquiry into the $12.93B Hugging Face deal (Oct 28, Reuters)"
+    },
+    {
+     "label": "Meta deal",
+     "value": "$3B investment in Meta's offering, expanded Muse partnership (Oct 27)"
+    },
+    {
+     "label": "Stock move",
+     "value": "Down 1% to 1.7% on Oct 28 per Yahoo Finance and Investing.com"
+    },
+    {
+     "label": "Last earnings",
+     "value": "Aug 26: revenue $96.2B, +106%"
+    }
+   ],
+   "controversy": "Circular financing: Nvidia and AMD funding Meta, one of their biggest customers.",
+   "posts": [
+    {
+     "author": "@DeItaone (Walter Bloomberg)",
+     "gist": "DOJ examining Nvidia's acquisition of Hugging Face",
+     "date": "2026-10-28T13:31:37-05:00",
+     "views": 117480,
+     "likes": 155,
+     "reposts": 14,
+     "excerpt": "$NVDA - US DOJ EXAMINING NVIDIA ACQUISITION OF AI PLATFORM HUGGING FACE, TWO PEOPLE SAY",
+     "engagement": "117,480 views, 155 likes, 14 reposts",
+     "url": "https://x.com/DeItaone/status/2115511823021576285"
+    },
+    {
+     "author": "@Investingcom",
+     "gist": "Breaking: DOJ inquiring about the Hugging Face deal",
+     "date": "2026-10-28T13:58:19-05:00",
+     "views": 38262,
+     "likes": 63,
+     "reposts": 15,
+     "excerpt": "BREAKING: *DOJ INQUIRING ABOUT NVIDIA ACQUISITION OF HUGGING FACE: REUTERS $NVDA",
+     "engagement": "38,262 views, 63 likes, 15 reposts",
+     "url": "https://x.com/Investingcom/status/2115518541185069502"
+    },
+    {
+     "author": "@WOLF_Financial",
+     "gist": "DOJ wants to know whether owning Hugging Face lets Nvidia control a distribution point for AI",
+     "date": "2026-10-28T13:35:04-05:00",
+     "views": 16565,
+     "likes": 76,
+     "reposts": 8,
+     "excerpt": "JUST IN: THE US JUSTICE DEPARTMENT IS REPORTEDLY LOOKING INTO NVIDIA'S $NVDA $12.9 BILLION DEAL TO BUY HUGGING FACE Officials want to know whether owning Hugging Face would let Nvidia control a fundamental distribution ...",
+     "engagement": "16,565 views, 76 likes, 8 reposts",
+     "url": "https://x.com/WOLF_Financial/status/2115512690462605598"
+    }
+   ]
   }
+ ],
+ "method": "Each read looks back about 3 to 5 days and names the real driver of the stock move. Posts come from X public search by cashtag and company name, filtered to credible voices (sell-side and buy-side analysts, fund managers, respected investors, financial journalists, company executives) and ranked by views, then likes. Memes, hype and recap bots are dropped. Post dates and counts come from X and were captured Oct 30, 2026. Moves and analyst targets come from free news sources. Anything marked unverified could not be confirmed.",
+ "sources": [
+  {
+   "title": "Nvidia, AMD to invest in Meta",
+   "site": "CNBC",
+   "url": "https://www.cnbc.com/2026/10/27/nvidia-invest-meta.html"
+  },
+  {
+   "title": "Meta eyes record $97.5 billion equity raise",
+   "site": "Investing.com (Reuters)",
+   "url": "https://www.investing.com/news/economy-news/meta-eyes-record-975-billion-equity-raise-to-fund-ai-expansion-4975360"
+  },
+  {
+   "title": "NVDA edges down on DOJ interest in Hugging Face deal",
+   "site": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/nvda-stock-edges-down-doj-222639728.html"
+  },
+  {
+   "title": "US DOJ inquiring about Nvidia's purchase of Hugging Face",
+   "site": "Investing.com (Reuters)",
+   "url": "https://www.investing.com/news/stock-market-news/exclusiveus-doj-is-inquiring-about-nvidias-purchase-of-hugging-face-sources-say-4980450"
+  },
+  {
+   "title": "Rocket Companies Q3 2026 earnings call transcript",
+   "site": "Investing.com",
+   "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-rocket-companies-tops-q3-2026-estimates-as-shares-rise-93CH-4985341"
+  },
+  {
+   "title": "BMO reiterates Starbucks on margin recovery",
+   "site": "Investing.com",
+   "url": "https://www.investing.com/news/analyst-ratings/bmo-reiterates-starbucks-stock-rating-on-margin-recovery-93CH-4986421"
+  }
+ ]
 }
