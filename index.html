@@ -115,9 +115,13 @@ const F=["all","bullish","mixed","bearish"];const fr=document.getElementById("fr
 fr.innerHTML=F.map(f=>'<button data-f="'+f+'"'+(f=="all"?' class="on"':'')+'>'+(f=="all"?"All":f[0].toUpperCase()+f.slice(1))+'</button>').join("")+'<span class="cnt" id="cnt"></span>';
 fr.querySelectorAll("button").forEach(b=>b.onclick=()=>{flt=b.dataset.f;fr.querySelectorAll("button").forEach(x=>x.classList.toggle("on",x==b));rows()});
 document.querySelectorAll("th").forEach(h=>h.onclick=()=>{if(sk==h.dataset.k)dir=-dir;else{sk=h.dataset.k;dir=1}rows()});rows();
-const R=(D&&D.requests)||{repo:"LongOnlyAnalyst/sentiment",label:"request"};
+const FORM_URL="https://formspree.io/f/mvkkbrnl";let pend=null;
 function go(s){flt="all";document.querySelectorAll("#fr button").forEach(x=>x.classList.toggle("on",x.dataset.f=="all"));rows();const e=document.getElementById("t-"+s);if(!e)return;e.scrollIntoView();e.classList.remove("hl");void e.offsetWidth;e.classList.add("hl")}
-function reqUrl(s){return "https://github.com/"+R.repo+"/issues/new?title="+encodeURIComponent("Sentiment request: "+s)+"&labels="+encodeURIComponent(R.label)+"&body="+encodeURIComponent("Ticker: "+s+"\nNote (optional): \n\nOpened from the Sentiment site. The Sentiment bot will research this ticker, add it to the site, and close this issue.")}
+function found(d,r){const u=r.toUpperCase();return d.tickers.find(t=>t.symbol.toUpperCase()==u||(t.company||"").toUpperCase()==u||(t.company||"").toUpperCase().includes(u)&&u.length>3)}
+function poll(r,t0){if(pend!==r)return;if(Date.now()-t0>15*60*1000){pend=null;nt.innerHTML='<div class="nt"><p><b>Still working on '+esc(r)+'</b></p><p>This is taking longer than usual. Reload the page later to check.</p></div>';return}
+fetch("data.json?t="+Date.now(),{cache:"no-store"}).then(x=>x.json()).then(d=>{if(pend!==r)return;const h=found(d,r);if(h){pend=null;location.hash="t-"+h.symbol;location.reload();return}setTimeout(()=>poll(r,t0),20000)}).catch(()=>setTimeout(()=>poll(r,t0),20000))}
+function send(r){const b=document.getElementById("rqb");if(b){b.disabled=true;b.textContent="Sending..."}
+fetch(FORM_URL,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify({_subject:"Sentiment request: "+r,message:r,request:r})}).then(x=>x.json().then(j=>{if(!x.ok)throw 0})).then(()=>{pend=r;nt.innerHTML='<div class="nt"><p><b>Request sent, it will appear here in a few minutes</b></p><p>Waiting for '+esc(r)+'. This page checks for it every 20 seconds.</p></div>';setTimeout(()=>poll(r,Date.now()),20000)}).catch(()=>{nt.innerHTML='<div class="nt"><p><b>Request failed</b></p><p>Could not send the request. Try again in a minute.</p></div>'})}
 const q=document.getElementById("q"),sg=document.getElementById("sug"),nt=document.getElementById("nt");
 const pool=()=>{const m=new Map();D.tickers.forEach(t=>m.set(t.symbol,{s:t.symbol,c:t.company,h:1}));D.watchlist.forEach(s=>{if(!m.has(s))m.set(s,{s,c:"Pending read",h:0})});return[...m.values()]};
 let ai=-1,cur=[];
@@ -127,10 +131,11 @@ function pick(v){v=v.trim().toUpperCase().replace(/^\$/,"");sg.hidden=true;nt.in
 const hit=D.tickers.find(t=>t.symbol==v)||D.tickers.find(t=>(t.company||"").toUpperCase()==v)||(match(v)[0]&&match(v)[0].h&&D.tickers.find(t=>t.symbol==match(v)[0].s));
 if(hit){q.value=hit.symbol;go(hit.symbol);return}
 const s=/^[A-Z.\-]{1,6}$/.test(v)?v:v.replace(/[^A-Z0-9 .&\-]/g,"").slice(0,40);
-nt.innerHTML='<div class="nt"><p><b>Not tracked yet: '+esc(s)+'</b></p><p>Press the button, then Submit on GitHub. The Sentiment bot picks up the request, researches the latest earnings reaction on X, and adds it here.</p><a class="btn" id="rqb" href="'+esc(reqUrl(s))+'" target="_blank" rel="noopener">Request a read on '+esc(s)+'</a></div>'}
+const raw=q.value.trim().slice(0,60)||s;
+nt.innerHTML='<div class="nt"><p><b>Not tracked yet: '+esc(raw)+'</b></p><p>Press the button. The Sentiment bot researches the latest earnings reaction on X and adds it here.</p><button class="btn" id="rqb" type="button">Request a read on '+esc(raw)+'</button></div>';document.getElementById("rqb").onclick=()=>send(raw)}
 q.oninput=showSug;q.onblur=()=>setTimeout(()=>sg.hidden=true,100);
 q.onkeydown=e=>{const it=sg.querySelectorAll("div");if(e.key=="ArrowDown"||e.key=="ArrowUp"){e.preventDefault();if(!it.length)return;ai=(ai+(e.key=="ArrowDown"?1:-1)+it.length)%it.length;it.forEach((x,i)=>x.classList.toggle("a",i==ai))}else if(e.key=="Enter"){e.preventDefault();pick(ai>=0&&cur[ai]?cur[ai].s:q.value)}else if(e.key=="Escape")sg.hidden=true};
-if(R.show!==false)fetch("https://api.github.com/repos/"+R.repo+"/issues?labels="+encodeURIComponent(R.label)+"&state=open&per_page=30").then(r=>r.ok?r.json():[]).then(L=>{if(!Array.isArray(L)||!L.length)return;const el=document.getElementById("rq");el.hidden=false;el.innerHTML='<span>Pending requests</span>'+L.map(i=>'<a href="'+esc(i.html_url)+'" target="_blank" rel="noopener">'+esc((i.title||"").replace(/^Sentiment request:\s*/i,""))+'</a>').join("")}).catch(()=>{});
+
 if(location.hash.startsWith("#q=")){q.value=decodeURIComponent(location.hash.slice(3));pick(q.value)}
 });
 </script></body></html>
