@@ -82,7 +82,8 @@
      "engagement": "3.2K views",
      "url": "https://x.com/FactSet/status/2115795271644831796"
     }
-   ]
+   ],
+   "addedAt": "2026-10-23T09:00:00-05:00"
   },
   {
    "symbol": "MSFT",
@@ -141,7 +142,8 @@
      "engagement": "29 likes, 7.3K views",
      "url": "https://x.com/TheTranscript_/status/2115567686986121596"
     }
-   ]
+   ],
+   "addedAt": "2026-10-23T09:00:00-05:00"
   },
   {
    "symbol": "AMZN",
@@ -196,7 +198,8 @@
      "engagement": "99 likes, 19 reposts, 13.9K views",
      "url": "https://x.com/TheTranscript_/status/2115906344096309517"
     }
-   ]
+   ],
+   "addedAt": "2026-10-23T09:00:00-05:00"
   },
   {
    "symbol": "META",
@@ -255,7 +258,8 @@
      "engagement": "Low reach, but a clear pro framing",
      "url": "https://x.com/AmineTX/status/2113361146061160553"
     }
-   ]
+   ],
+   "addedAt": "2026-10-23T09:00:00-05:00"
   },
   {
    "symbol": "SBUX",
@@ -310,7 +314,8 @@
      "engagement": "28 likes, 9.3K views",
      "url": "https://x.com/WOLF_Financial/status/2115898860702691661"
     }
-   ]
+   ],
+   "addedAt": "2026-10-23T09:00:00-05:00"
   },
   {
    "symbol": "RKT",
@@ -353,7 +358,8 @@
      "engagement": "1.5K views",
      "url": "https://x.com/Finsee_main/status/2115921799955316810"
     }
-   ]
+   ],
+   "addedAt": "2026-10-23T09:00:00-05:00"
   },
   {
    "symbol": "SPCX",
@@ -416,7 +422,8 @@
      "engagement": "Low reach",
      "url": "https://x.com/SurmountInvest/status/2112200678735061367"
     }
-   ]
+   ],
+   "addedAt": "2026-10-23T09:00:00-05:00"
   }
  ],
  "method": "I searched X with date limits around each earnings date, using cashtags, company names and themes. I also ran searches limited to a list of professional accounts, such as research desks, the sell-side, former fund managers and trade journalists. Posts were ranked by likes, reposts and views. Memes, options-flow promoters, bot recaps and low-follower hype were dropped. X's API cannot filter by engagement, so ranking was done by hand. Stock moves and analyst targets come from CNBC, AP, Yahoo Finance, Benzinga and Investing.com. Engagement counts were captured on Oct 30 and will keep changing. The RKT stock move is unverified. Pro reach on X is modest overall. The best-known names (sell-side analysts, PMs) mostly do not post on X, so the Street views here come from news coverage of their notes.",
@@ -451,5 +458,10 @@
    "site": "CNBC",
    "url": "https://www.cnbc.com/2026/10/21/spacex-stock-q3-earnings-analysts.html"
   }
- ]
+ ],
+ "requests": {
+  "repo": "LongOnlyAnalyst/sentiment",
+  "label": "request",
+  "show": true
+ }
 }
