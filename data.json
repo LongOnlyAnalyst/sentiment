@@ -1,7 +1,7 @@
 {
  "title": "Sentiment",
  "subtitle": "Type a company to get a read",
- "updatedAt": "2026-10-30T10:47:08-05:00",
+ "updatedAt": "2026-11-09T13:05:00-06:00",
  "bigPicture": {
   "lead": "Funding AI is the story across big tech this week.",
   "body": [
@@ -18,7 +18,8 @@
   "RKT",
   "SPCX",
   "NVDA",
-  "INTC"
+  "INTC",
+  "QXO"
  ],
  "tickers": [
   {
@@ -1054,6 +1055,141 @@
      "excerpt": "Client is headed toward $6.3B versus $8.4B Street. The PC hole swallows the server upside... you can be right about the CPU boom and still wrong about which stock captures it.",
      "engagement": "10,083 views, 47 likes, 0 reposts",
      "url": "https://x.com/benitoz/status/2116034167788224935"
+    }
+   ]
+  },
+  {
+   "symbol": "QXO",
+   "company": "QXO, Inc.",
+   "driver": {
+    "type": "Earnings",
+    "title": "Preliminary third quarter beat plus Brad Jacobs' separate $1B CKX Lands venture, with Jacobs staying QXO CEO",
+    "date": "2026-11-09"
+   },
+   "move": "Up about 19% to 21% intraday on November 9 (about $13.73 to $13.94 around midday) from an $11.56 close on November 6. Earlier in the window: up 8.1% to $12.66 on November 4, down 8.1% to $11.64 on November 5, down 0.7% on November 6.",
+   "moveTone": "up",
+   "sentiment": "mixed",
+   "sentimentLabel": "Mixed, leaning positive",
+   "verdict": "Mixed, leaning positive: a revenue beat and better pricing sparked a relief rally off depressed levels, but the stock is still less than half its 52-week high, the housing and roofing backdrop is weak, and Jacobs now splits time with a second $1B vehicle.",
+   "topTheme": "Relief rally on a September beat, with a Jacobs side venture in the background",
+   "updatedAt": "2026-11-09T13:05:00-06:00",
+   "addedAt": "2026-11-09T13:05:00-06:00",
+   "changed": "New read. First time QXO is tracked.",
+   "overview": {
+    "lean": "Mixed, leaning positive. The tape voted bullish on November 9, but the sell side has been cutting targets for a month and almost nobody credible on X is making a strong call on QXO itself; attention went to the CKX deal.",
+    "camps": [
+     {
+      "name": "Execution bulls (sell side on Buy, Jacobs loyalists)",
+      "argues": "September came in much stronger than expected, roofing pricing turned positive (up 4.1% in September) and October daily roofing sales rose 9.1%, so QXO is gaining share in a weak market. Management targets about $4B of adjusted EBITDA by 2030, or up to about $5.5B with internally funded deals, and has more than $2B of liquidity with no maturities before 2031. All 12 tracked analysts rate it Buy (TipRanks)."
+     },
+     {
+      "name": "Macro and dilution skeptics",
+      "argues": "Growth is almost all acquired (Beacon, Kodiak, TopBuild), GAAP is still a loss of about $123M, residential roofing is in one of its weakest markets in years with no storm season, and targets have been cut hard since October (Truist to $15, Wells Fargo to $15, RBC to $18, Baird to $20, Citi to $22)."
+     },
+     {
+      "name": "Key-man worriers",
+      "argues": "Jacobs launching a ninth company through CKX Lands, with an undecided industry and its own $1B war chest, takes time and possibly future deals away from QXO. Jacobs answered on the call that he is 100% committed and owns about a quarter of QXO."
+     }
+    ],
+    "agree": "Agree the preliminary quarter was better than feared (revenue about $4.90B against roughly $4.83B to $4.85B expected) and that Jacobs staying as QXO chairman and CEO removed the worst reading of the CKX news. Agree CKX is Jacobs' personal vehicle, not a QXO deal.",
+    "split": "Split on whether one strong September and October means the cycle is turning or just a good month in a weak market, and on whether a second Jacobs roll-up vehicle helps QXO (proof he has built a team that can run without him) or hurts it (attention and deal-flow conflict).",
+    "shift": [
+     {
+      "date": "2026-11-04",
+      "note": "Stock up 8.1% to $12.66 on heavy call buying (MarketBeat) and integration optimism; no single company headline confirmed."
+     },
+     {
+      "date": "2026-11-05",
+      "note": "Down 8.1% to $11.64. Citi cut its target to $22 from $25 (Buy kept) on weaker residential and storm demand, the day after Owens Corning reported roofing revenue down 16% and called it one of the most challenging residential markets in years."
+     },
+     {
+      "date": "2026-11-09",
+      "note": "Before the open QXO pre-announces third quarter results and JPE announces the $1B CKX Lands investment. On the 8:30 AM Eastern call Jacobs says he is 100% committed to QXO. Stock up about 19% to 21% by midday."
+     }
+    ],
+    "hinges": "The full third quarter report and 10-Q on November 12 (margins, transaction costs, any fourth quarter color), whether the roofing price and October volume gains hold into winter, and whether Jacobs keeps QXO as the clear priority for building-products deals once CKX picks its industry."
+   },
+   "whatHappened": "On November 9 QXO pre-announced third quarter 2026 results: net sales of about $4.90B, up 79% from $2.73B, adjusted EBITDA of about $557M, up 85% from $301M (11.4% margin), and a GAAP net loss of about $123M against $139M a year earlier (QXO release). Growth was mostly from the Kodiak and TopBuild acquisitions. Jacobs said September came in much stronger than expected; roofing pricing went from down 1.1% in April to up 4.1% in September, and October daily roofing sales rose 9.1% (company total up 5.4%). Full results come November 12. The same morning, Jacobs Private Equity II (JPE, Jacobs' family office) and co-investors led by HRTG Partners (formerly Sequoia Heritage) agreed to invest $1B in cash in CKX Lands (NYSE American: CKX), a Louisiana land company with oil and gas royalties, timber and surface rents and a market value of about $21M. JPE puts in $900M and co-investors $100M, for voting convertible perpetual preferred convertible into about 219M shares at $4.57 (post a 4.174-for-1 reverse split; $1.09 pre-split) plus about 219M warrants struck at $4.57 (50%), $6.85 (25%) and $13.70 (25%). Investors would own about 99.78% on a fully converted basis before warrants. Existing CKX holders get a $20.8M special dividend ($10.1312 a share). Closing is expected in early 2027, subject to a CKX shareholder vote; holders of about 28% of the vote have signed support agreements. Jacobs becomes CKX chairman and CEO, the company will be renamed, and its industry is still to be determined. QXO itself is not an investor and puts in no money.",
+   "howReading": "The sell side stayed constructive but cautious: every tracked analyst is at Buy, yet targets were cut through October and again by Citi on November 5, so the November 9 beat reads as relief rather than a re-rating. Coverage from The Motley Fool and Benzinga framed the rally as the revenue beat plus reassurance that Jacobs stays at QXO. On X, credible attention went almost entirely to the CKX deal: Bloomberg and Investing.com carried it as news, Investing.com called the size of a bet with no chosen industry the real story, and FreightWaves' John Kingston asked what Jacobs will do with $1B in a $21M company. Smaller accounts split between seeing it as a distraction for QXO and as a sign QXO is set up well enough to run without his full attention. High-reach posts about QXO itself were scarce in the window; the cashtag was dominated by spam and WhatsApp-group promos, which were excluded.",
+   "facts": [
+    {
+     "label": "Q3 net sales (preliminary)",
+     "value": "About $4.90B, up 79% from $2.73B (November 9, QXO release); estimate about $4.83B to $4.85B (TipRanks, Benzinga)"
+    },
+    {
+     "label": "Q3 adjusted EBITDA (preliminary)",
+     "value": "About $557M, up 85% from $301M; 11.4% margin (November 9, QXO release and call)"
+    },
+    {
+     "label": "Q3 GAAP net loss (preliminary)",
+     "value": "About $123M vs $139M a year earlier (November 9, QXO release)"
+    },
+    {
+     "label": "Roofing trends",
+     "value": "Pricing up 4.1% year over year in September vs down 1.1% in April; October daily roofing sales up 9.1%, company up 5.4% (November 9 call, via Roofing Contractor)"
+    },
+    {
+     "label": "Balance sheet and targets",
+     "value": "More than $2B liquidity, no debt maturities before 2031; about $4B adjusted EBITDA target by 2030, up to about $5.5B with internally funded deals (November 9 call)"
+    },
+    {
+     "label": "CKX Lands deal",
+     "value": "$1B cash: $900M JPE, $100M co-investors led by HRTG Partners; convertible preferred at $4.57 post-split into about 219M shares, plus about 219M warrants at $4.57, $6.85 and $13.70; about 99.78% ownership before warrants; $20.8M ($10.1312 a share) special dividend; close early 2027 (November 9, joint release and CKX 8-K)"
+    },
+    {
+     "label": "Analyst targets",
+     "value": "Citi $22 from $25 (November 5); Baird $20 from $30 and Morgan Stanley $35 (October 20); Wells Fargo $15 from $16 (October 16); Truist $15 from $26 (October 8); RBC $18 from $27 (October 7). All Buy; average about $25.27 across 12 analysts (TipRanks, November 9)"
+    },
+    {
+     "label": "Stock move",
+     "value": "$11.56 close November 6; about $13.73 to $13.94 midday November 9, up about 19% to 21% (RTTNews, Benzinga, Yahoo Finance); 52-week range $10.04 to $27.61"
+    }
+   ],
+   "controversy": "Whether Jacobs starting a ninth company is a distraction or a conflict for QXO. CKX will be a second listed acquisition vehicle with a $1B war chest and an industry not yet picked; Jacobs says he is looking for a large, fragmented market resistant to AI and robotics disruption, and that he remains 100% committed to QXO, where he owns about a quarter of the stock. No public statement was found on how future deals will be allocated between QXO and CKX.",
+   "posts": [
+    {
+     "author": "@business (Bloomberg)",
+     "gist": "Bloomberg's scoop framing: CKX Lands becomes Jacobs' new investment vehicle via a $1B deal",
+     "date": "2026-11-09T12:10:04-06:00",
+     "views": 14726,
+     "likes": 1,
+     "reposts": 0,
+     "excerpt": "Brad Jacobs is nearing a deal to lead a $1 billion investment in CKX Lands, with the small-cap company set to become a new investment vehicle for the billionaire serial entrepreneur, according to sources",
+     "engagement": "14,726 views, 1 like, 0 reposts",
+     "url": "https://x.com/business/status/2119855054173651160"
+    },
+    {
+     "author": "@newsinvesting (Investing.com News)",
+     "gist": "CKX surges; the size of a $1B bet with no industry chosen is the real story, and Jacobs keeps running QXO",
+     "date": "2026-11-09T08:05:25-06:00",
+     "views": 6811,
+     "likes": 53,
+     "reposts": 37,
+     "excerpt": "Jacobs set to become chairman and CEO while continuing to run QXO $QXO. The industry hasn't even been chosen yet, which makes the size of the bet the real story.",
+     "engagement": "6,811 views, 53 likes, 37 reposts",
+     "url": "https://x.com/newsinvesting/status/2119793484647289087"
+    },
+    {
+     "author": "@JohnHKingston (John Kingston, FreightWaves)",
+     "gist": "Skeptical framing before the call: a $1B check into a $21.2M land company, so what will he do with it?",
+     "date": "2026-11-09T05:29:29-06:00",
+     "views": 2814,
+     "likes": 7,
+     "reposts": 1,
+     "excerpt": "Brad Jacobs' latest deal to essentially buy a company called $CKX. It's a $21.2M market cap with minimal revenues from land holdings. Average daily volume is about 3,100. Jacobs investment: $1B. So what will he do with it?",
+     "engagement": "2,814 views, 7 likes, 1 repost",
+     "url": "https://x.com/JohnHKingston/status/2119754243548876813"
+    },
+    {
+     "author": "@TransportTopics (Transport Topics)",
+     "gist": "Trade press: the XPO, GXO, RXO and QXO founder takes a majority stake and the CEO role at CKX Lands",
+     "date": "2026-11-09T09:44:14-06:00",
+     "views": 360,
+     "likes": 1,
+     "reposts": 1,
+     "excerpt": "XPO, GXO, RXO and QXO founder Brad Jacobs will gain majority stake and become chairman and CEO of land management firm CKX Lands.",
+     "engagement": "360 views, 1 like, 1 repost",
+     "url": "https://x.com/TransportTopics/status/2119818352528961734"
     }
    ]
   }
