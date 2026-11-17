@@ -1,7 +1,7 @@
 {
  "title": "Sentiment",
  "subtitle": "Type a company to get a read",
- "updatedAt": "2026-11-09T13:05:00-06:00",
+ "updatedAt": "2026-11-17T11:43:00-06:00",
  "bigPicture": {
   "lead": "Funding AI is the story across big tech this week.",
   "body": [
@@ -19,7 +19,8 @@
   "SPCX",
   "NVDA",
   "INTC",
-  "QXO"
+  "QXO",
+  "NKE"
  ],
  "tickers": [
   {
@@ -1190,6 +1191,144 @@
      "excerpt": "XPO, GXO, RXO and QXO founder Brad Jacobs will gain majority stake and become chairman and CEO of land management firm CKX Lands.",
      "engagement": "360 views, 1 like, 1 repost",
      "url": "https://x.com/TransportTopics/status/2119818352528961734"
+    }
+   ]
+  },
+  {
+   "symbol": "NKE",
+   "company": "NIKE, Inc.",
+   "driver": {
+    "type": "Guidance",
+    "title": "First investor day in nine years: Full Stride Ahead strategy and 2031 financial framework",
+    "date": "2026-11-17"
+   },
+   "move": "On November 17 the stock popped in premarket, with The Fly printing about $40.80, up about 7% from the November 16 close of $38.26. It opened at $40.20, traded as high as $40.67, then faded through the morning. As of 11:41 AM Central it was $37.50, down $0.76 or 2.0%, with a session low of $37.17 (Yahoo Finance, 12:41 PM Eastern, market still open). Around 10:50 AM Central, as the webcast continued, The Fly had it down about 1% at $38.05.",
+   "moveTone": "down",
+   "sentiment": "mixed",
+   "sentimentLabel": "Mixed, leaning cautious",
+   "verdict": "Mixed, leaning cautious: long-term margin and EPS targets came in above Street models and sparked a premarket pop, but the stock gave that back as investors focused on a back-weighted plan that does not restore growth until fiscal 2029 and barely rebuilds sales to fiscal 2026 levels.",
+   "topTheme": "A premarket pop on 2031 margin targets faded once the wait for growth and the modest sales math sank in",
+   "updatedAt": "2026-11-17T11:43:00-06:00",
+   "addedAt": "2026-11-17T11:43:00-06:00",
+   "changed": "New read. First time NKE is tracked. Coverage is still partial: the public webcast runs until about 12:00 PM Pacific (2:00 PM Central), and Q&A had not been fully reported when this was written.",
+   "overview": {
+    "lean": "Mixed, leaning cautious. The first reaction to the 2031 margin and EPS targets was bullish, but by late morning the tape had reversed and the sell side was split between calling the framework a conservative floor and calling it aggressive and too far out.",
+    "camps": [
+     {
+      "name": "Floor bulls (Jefferies, and to a degree Baird)",
+      "argues": "Jefferies analyst Randal Konik (Buy) called the 2031 framework 'the credible floor we hoped for,' saying the $5B of incremental sales off the fiscal 2027 trough looks beatable and that waiting until fiscal 2029 for market-level growth gives innovation time to scale (WWD). Baird's Jonathan Komp called it a constructive step toward rebuilding confidence, said the timeline looks reasonable given a pipeline that should gain traction from late 2027 into 2028, and still wants proof of successful launches and a better marketplace, especially in Greater China (Investing.com)."
+     },
+     {
+      "name": "Margin-recovery realists (Stifel Hold, RBC Sector Perform)",
+      "argues": "The equity story is the margin rebuild, not a big sales rebound. Stifel's Peter McGoldrick kept a Hold and said the 12% to 14% operating margin and $3.00 to $3.50 adjusted EPS are above the firm's 11% EBIT margin and $3 EPS view, even though implied revenue is lower than Stifel's about $51.2B (The Fly, Investing.com). RBC kept Sector Perform and a $39 target, called the targets 'more ambitious than expected,' and noted that 12% to 14% margins sit well above a 9.4% consensus and that the EPS range is about 20% above market expectations. RBC also said the path is back-weighted, depends on gross margin recovery and savings, and leaves little room for near-term positive surprises (MarketScreener)."
+     },
+     {
+      "name": "Skeptics (Truist, and the late-morning tape)",
+      "argues": "Truist analyst Joseph Civello said the fiscal 2031 outlook is better than investors expected but 'very back-weighted,' and called it 'aggressive given the current pressures facing the brand itself in a tough time for the category.' He added that management has 'often underestimated pressures in their commentary/plans' (WWD). The fade from a 6.3% gain to a loss of about 2% is this camp's market vote: growth does not return until fiscal 2029, implied fiscal 2031 sales of about $48B are only a little above fiscal 2026, capital returns are dividends only with no buyback commitment, and Sportswear, including Jordan and Converse, is asked to add only about $1B of the $5B increment."
+     }
+    ],
+    "agree": "Agree fiscal 2027 is still an investment year (high-single-digit revenue decline, about 6% adjusted operating margin, $1.15 to $1.35 adjusted EPS), that Performance Sports is the intended growth engine, and that the interesting debate is the margin recovery, not a rapid return to mid-teens sales growth.",
+    "split": "Split on whether 12% to 14% margins and $3.00 to $3.50 of adjusted EPS by fiscal 2031 are a conservative, beatable floor or an aggressive promise from a team that has underestimated pressure, and on how much of the $2.5B Pace savings will actually show up in profit.",
+    "shift": [
+     {
+      "date": "2026-11-16",
+      "note": "Monday product showcase and a separate UEFA Champions League match-ball deal starting in the 2027-28 season. Nike showed Tuned Air, new Nike Free and Nike Mind footwear, Vaporfly 5, and Sportswear ideas including Project Ride and Morpho X, with most of it arriving over the coming year (Nike release)."
+     },
+     {
+      "date": "2026-11-17",
+      "note": "9:00 AM Eastern press release sets the 2031 framework and reaffirms fiscal 2027 guidance. Premarket gain of about 6% to 7%. Public webcast begins 8:30 AM Pacific. By late morning the stock had given the gain back and was down about 2%."
+     }
+    ],
+    "hinges": "Whether new product actually sells at full price from late 2027 into 2028, whether Greater China and Sportswear or Jordan stabilize, whether Pace savings fall to the bottom line, and whatever else comes out of the rest of the webcast and Q&A, which were still underway when this was written. The next formal earnings date is estimated for December 17."
+   },
+   "whatHappened": "Nike hosted its first investor day since 2017 at the Philip H. Knight Campus in Beaverton. The morning press release, which went out at 9:00 AM Eastern, before the 8:30 AM Pacific webcast, introduced Full Stride Ahead, reaffirmed fiscal 2027 guidance, and set a 2031 framework: about $5B of incremental revenue off a fiscal 2027 base (about $4B from Performance Sports and $1B from Sportswear), operating margins of 12% to 14%, and adjusted EPS of $3.00 to $3.50. Fiscal 2027 is still a high-single-digit revenue decline, adjusted operating margin of about 6%, and adjusted EPS of $1.15 to $1.35, excluding about $0.15 a share of Pace restructuring expense. Declines are expected to moderate in fiscal 2028, with market-level growth targeted in fiscal 2029 and growth above the market in fiscal 2030 and 2031. Pace is expected to deliver about $2.5B of annualized run-rate savings by fiscal 2031, with about $1.3B of pre-tax implementation charges. Capital returns are about $2.4B of dividends in fiscal 2027 and about $12B of cumulative dividends from fiscal 2027 through 2031, with no separate buyback commitment. Five priority sports (running, training, global football, basketball and outdoor), Sportswear (Nike Sportswear, Jordan and Converse), and 23 priority countries are expected to drive more than 90% of growth through 2031. The CFO speaking today is Dave Denton, not Matt Friend; Denton joined about three months ago. Beyond the release, during the webcast CEO Elliott Hill said the more-than-$330B athletic footwear and apparel industry is expected to keep growing 3% to 4% a year (The Fly). Reuters, with Danielle Kaye reporting from Beaverton, quoted Hill telling investors, 'We have a growing market, more ways to serve athletes and advantages built over decades,' while acknowledging 'we have more work to do on inventory, full-price selling, and profitability.' Hill also said Nike aims to double the number of products developed in under 14 months by the end of fiscal 2031, a target that was not in the press release (Reuters). In a CNBC interview with Sara Eisen, Hill said the work is about 'being closer to the athletes we serve' and that 'what's different today is the depth and breadth we're taking from an innovation perspective.' Caitlin Clark appeared on stage and Paige Bueckers was in a Nike Zoom intro (posts from accounts covering the event). Q&A and later presentations had not been fully reported by late morning Central time; the webcast is scheduled to run until about 12:00 PM Pacific.",
+   "howReading": "Credible discussion was heavier in sell-side notes than on X, where the highest-attention posts were headline accounts marking the premarket pop, the $12B dividend plan, and then the reversal. Jefferies was the most constructive (credible, beatable floor). Stifel and RBC treated the margin and EPS targets as more ambitious than their models but kept Hold or Sector Perform because the recovery is back-weighted and implied revenue is modest. Truist was the clearest skeptic, calling the outlook aggressive and back-weighted. Across those notes, the implied fiscal 2031 revenue of about $48B is only a little above fiscal 2026 revenue of about $46.4B (Investing.com; LSEG has fiscal 2027 consensus around $42.84B, which plus $5B gets to roughly the same place). Standing Wall Street consensus, not all from today, is mixed: TipRanks shows 9 Buys, 18 Holds and 10 Sells among 37 analysts over the past three months, with an average target around $36.47, a bit below the mid-morning price. RBC reiterated Sector Perform at $39 today. Cantor Fitzgerald was Neutral at $38 ahead of the event.",
+   "facts": [
+    {
+     "label": "Fiscal 2027 guide (reaffirmed)",
+     "value": "High-single-digit revenue decline, about 6% adjusted operating margin, $1.15 to $1.35 adjusted EPS excluding about $0.15 of Pace charges, and about $2.4B of dividends (Nike release, November 17)"
+    },
+    {
+     "label": "2031 framework",
+     "value": "About $5B of incremental revenue vs fiscal 2027 ($4B Performance Sports, $1B Sportswear), 12% to 14% operating margins, $3.00 to $3.50 adjusted EPS, and about $12B of cumulative dividends from fiscal 2027 through 2031 (Nike release, November 17)"
+    },
+    {
+     "label": "Path back to growth",
+     "value": "Fiscal 2027 and 2028 are investment years; declines moderate in fiscal 2028; market-level growth targeted in fiscal 2029; growth above the market in fiscal 2030 and 2031 (Nike release, November 17)"
+    },
+    {
+     "label": "Pace savings and charges",
+     "value": "About $2.5B annualized run-rate savings by fiscal 2031, with benefits starting in fiscal 2027 and ramping in fiscal 2029 and 2030; about $1.3B pre-tax charges, including $0.3B recognized in fiscal 2026 and $0.3B expected in fiscal 2027 for severance (Nike release, November 17)"
+    },
+    {
+     "label": "Industry growth (from the stream)",
+     "value": "Hill said the athletic footwear and apparel market is more than $330B and is expected to keep growing 3% to 4% a year (The Fly, during the November 17 webcast)"
+    },
+    {
+     "label": "Product speed target (from the stream)",
+     "value": "Hill said Nike aims to double the number of products developed in under 14 months by the end of fiscal 2031 (Reuters, November 17)"
+    },
+    {
+     "label": "Stock move, November 17",
+     "value": "November 16 close $38.26; regular-session range $37.17 to $40.67; $37.50, down 2.0%, as of 11:41 AM Central (Yahoo Finance)"
+    }
+   ],
+   "controversy": "The fight is whether the 12% to 14% margin and $3.00 to $3.50 EPS targets by fiscal 2031 are a conservative floor (Jefferies) or an aggressive, back-weighted promise (Truist), and whether a plan that does not restore growth until fiscal 2029, adds only about $5B of sales off a trough year, and returns cash only through dividends is enough. Coverage of Q&A is still incomplete because the event was still running.",
+   "posts": [
+    {
+     "author": "@zerohedge (ZeroHedge)",
+     "gist": "Highest-attention market post of the morning: flags the early 3% bounce on the 2031 framework, then needles how far out the plan is",
+     "date": "2026-11-17T08:04:47-06:00",
+     "views": 72799,
+     "likes": 228,
+     "reposts": 12,
+     "excerpt": "*NIKE SHARES UP MORE THAN 3% AFTER GIVING 2031 FRAMEWORK When does it release 2041 framework?",
+     "engagement": "72,799 views, 228 likes, 12 reposts",
+     "url": "https://x.com/zerohedge/status/2122692427412832717"
+    },
+    {
+     "author": "@FirstSquawk (First Squawk)",
+     "gist": "Squawk desk marks the reversal: the premarket gain, which had reached 6.3%, is gone",
+     "date": "2026-11-17T10:43:19-06:00",
+     "views": 22020,
+     "likes": 21,
+     "reposts": 2,
+     "excerpt": "NIKE SHARES ERASE GAIN THAT HAD REACHED 6.3%",
+     "engagement": "22,020 views, 21 likes, 2 reposts",
+     "url": "https://x.com/FirstSquawk/status/2122732323833806982"
+    },
+    {
+     "author": "@Investingcom (Investing.com)",
+     "gist": "Early headline on the two items that first lifted the stock: $12B of dividend returns and the 2031 framework",
+     "date": "2026-11-17T09:08:55-06:00",
+     "views": 21267,
+     "likes": 37,
+     "reposts": 4,
+     "excerpt": "*NIKE TO RETURN $12B OF CAPITAL TO HOLDERS THROUGH DIVIDENDS *NIKE SHARES UP MORE THAN 3% AFTER GIVING 2031 FRAMEWORK $NKE",
+     "engagement": "21,267 views, 37 likes, 4 reposts",
+     "url": "https://x.com/Investingcom/status/2122708568814059560"
+    },
+    {
+     "author": "@CNBC (CNBC)",
+     "gist": "Pre-open setup piece: first investor day in nine years as Nike tries to rightsize the business",
+     "date": "2026-11-17T06:09:48-06:00",
+     "views": 17588,
+     "likes": 10,
+     "reposts": 0,
+     "excerpt": "Nike hosts first investor day in 9 years as it tries to rightsize its business",
+     "engagement": "17,588 views, 10 likes, 0 reposts",
+     "url": "https://x.com/CNBC/status/2122663493597860344"
+    },
+    {
+     "author": "@TSOH_Investing (Alex Morris, TSOH Investment Research)",
+     "gist": "Fundamental investor highlight of the capital-return fine print: about $12B back through dividends only, fiscal 2027 through 2031",
+     "date": "2026-11-17T08:30:07-06:00",
+     "views": 1694,
+     "likes": 7,
+     "reposts": 0,
+     "excerpt": "Nike Investor Day: \"Expects approximately $12 billion of cumulative capital returns through dividends to shareholders from fiscal 2027 through fiscal 2031.\"",
+     "engagement": "1,694 views, 7 likes, 0 reposts",
+     "url": "https://x.com/TSOH_Investing/status/2122698805304840314"
     }
    ]
   }
